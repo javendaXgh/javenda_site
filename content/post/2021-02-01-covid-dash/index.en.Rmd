@@ -1,0 +1,23 @@
+---
+title: covid_dash
+author: R package build
+date: '2021-02-01'
+slug: covid-dash
+categories:
+  - R
+tags:
+  - covid_19
+  - visualizaciones
+  - data_viz
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-02-01T20:46:33-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+# post de prueba
