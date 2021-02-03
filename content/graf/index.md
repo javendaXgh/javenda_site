@@ -16,7 +16,7 @@ header:
 ---
 ---
 
-#### Acceso a gráficos interactivoS y datos históricos del COVID19 en Venezuela según cifras oficiales:
+#### Acceso a gráficos interactivos y datos históricos del COVID19 en Venezuela según cifras oficiales:
 https://www.javenda.me/covid19venezuela.html/
 
 #### Accesso a visualización de gráfico interactivo con los cambios de movilidad en Sur América motivados en la aparición del COVID 19 según datos del Google Mobility Report.
