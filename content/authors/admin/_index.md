@@ -71,6 +71,7 @@ Previamente trabajé en la administración pública de Venezuela en distintos ca
 
 En la administración tributaria nacional de Venezuela estuve a cargo del proyecto de emisión electrónica del Registro de Información Fiscal (RIF).
 
-También son  mis áreas de interés el procesamiento y la visualización de datos, la estadística junto con distintas técnicas que me permiten ser un aprendiz de la Ciencia de Datos.
+También son  mis áreas de interés el procesamiento y la visualización de datos, la estadística junto con distintas técnicas que me permiten ser un aprendiz de la Ciencia de Datos. 
 
-Si llega a quedar algo de tiempo el cello 🎻 y la guitarra 🎸 tienen un sitial de honor.
+Actualmente trabajo como consultor en las áreas mencionadas.
+
