@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://javenda.me/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://javenda.me/authors/</loc>
+  </url>
+  
+  <url>
+    <loc>https://javenda.me/</loc>
+  </url>
+  
+  <url>
+    <loc>https://javenda.me/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://javenda.me/author/jose-miguel-avendano-i./</loc>
+  </url>
+  
+  <url>
+    <loc>https://javenda.me/post/</loc>
+  </url>
+  
+  <url>
+    <loc>https://javenda.me/publication_types/</loc>
+  </url>
+  
+  <url>
+    <loc>https://javenda.me/tags/</loc>
+  </url>
+  
+  <url>
+    <loc>https://javenda.me/graf/</loc>
+  </url>
+  
+</urlset>

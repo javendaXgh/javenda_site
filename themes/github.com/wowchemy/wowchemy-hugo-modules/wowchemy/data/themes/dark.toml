@@ -1,0 +1,18 @@
+# Theme metadata
+name = "Dark"
+
+# Is theme light or dark?
+light = true
+
+# Primary
+primary = "#888" #"hsl(339, 90%, 68%)" #letras cuando se hace hoover y fondo de anuncio cookie
+
+# Menu
+menu_primary =  "#003049"#"rgb(20, 22, 34)" #barrita arriba en light
+menu_text = "rgba(255,255,255,0.6)"#rgba(255,255,255,0.6)menu texto
+menu_text_active = "#DDD"#rgba(255,255,255,1)
+menu_title = "#fff"#fff #titul del blog
+
+# Home sections
+home_section_odd = "#DDD"#"hsla(231, 15%, 18%, 1)#color de home en dark
+home_section_even = "#DDD"#hsla(231, 15%, 16%, 1) color de acerca de mi en dark

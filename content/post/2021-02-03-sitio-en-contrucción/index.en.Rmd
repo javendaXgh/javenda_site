@@ -1,0 +1,21 @@
+---
+title: Sitio en contrucción
+author: José Miguel Avendaño I.
+date: '2021-02-03'
+slug: sitio-en-contrucción
+categories: []
+tags:
+  - R
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-02-03T06:14:42-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+Este sitio se encuentra en construcción. En la sección "Visualizaciones" puede encontrar acceso a gráficos de interés mienstras este sitio es poblado con los artículos y opiniones del autor.
