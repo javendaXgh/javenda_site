@@ -115,7 +115,7 @@ contact_links = [
   {icon = "twitter", icon_pack = "fab", name = "javendaXtw", link = "https://twitter.com/javendaXtw"},
   {icon = "github", icon_pack = "fab", name = "javendaXgh", link = "http://github.com/javendaXgh"},
   {icon = "linkedin", icon_pack = "fab", name = "javendaxin", link = "http://linkedin.com/in/javendaxin"},
-  {icon = "envelope-square", icon_pack = "fa", name = "correo", link = "javenda.Xblog@gmail.com"},
+  {icon = "envelope-square", icon_pack = "fa", name = "javenda.Xblog@gmail.com", link = "mailto::javenda.Xblog@gmail.com"},
   # {icon = "telegram", icon_pack = "fab", name = "Telegram Me", link = "https://telegram.me/@Telegram"},
   ]
 
