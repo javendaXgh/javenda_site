@@ -80,4 +80,4 @@ También son  mis áreas de interés el procesamiento y la visualización de da
 Actualmente trabajo como consultor en las áreas mencionadas.
 
 -- 
-José M. Avendaño
+José M. Avendaño I.
