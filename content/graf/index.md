@@ -18,6 +18,7 @@ header:
 
 #### Acceso a gráficos interactivos y datos históricos del COVID19 en Venezuela según cifras oficiales:
 https://www.javenda.me/covid19venezuela.html/
+(tiempo de carga cercano a 30 segundos)
 
 #### Accesso a visualización de gráfico interactivo con los cambios de movilidad en Sur América motivados en la aparición del COVID 19 según datos del Google Mobility Report.
 https://javenda.shinyapps.io/movilsur/
