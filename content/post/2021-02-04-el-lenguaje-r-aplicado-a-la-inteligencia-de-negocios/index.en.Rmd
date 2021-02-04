@@ -20,7 +20,7 @@ image:
 projects: []
 ---
 
-R es un poderoso lenguaje de
+**R** es un poderoso lenguaje de
 programación implementado como software libre
 inicialmente orientado a usuarios del mundo de la
 estadística. Con el transcurso del tiempo se ha
@@ -227,7 +227,7 @@ el Dataware House.
 
 ### V. PAQUETES R DE UTILIDAD PARA LA I.N.:
 
-#### A. Tidyverse: es una colección de paquetes que permiten
+>#### A. Tidyverse: es una colección de paquetes que permiten
 generar una gran cantidad de procesos que inician con la carga
 de los datos, las transformaciones que sean requeridas,
 almacenamiento en formatos que R maneja de manera más
@@ -241,27 +241,28 @@ sea ejecutado. Esta colección está compuesta por: ggplot 2
 tible (almacenamiento de datos), strinr (procesamiento de
 expresiones de textos) [6].
 
+
 ![suite tidyverse](images/r-packages.png){width=90%, align=center}
 
-#### B. Shiny: 
-es un paquete que permite generar aplicaciones web
+>#### B. Shiny: 
+Es un paquete que permite generar aplicaciones web
 interactivas con visualización de reportes, tablas y gráficos en
 el navegador web y permite al usuario interactuar con los
 datos disponibles. Puede ser alojado bajo la modalidad standalone
 o en un servidor [7].
 
-#### C. Radiant: 
-basado en shiny incrementa las potencialidades en
+>#### C. Radiant: 
+Basado en shiny incrementa las potencialidades en
 la visualización y procesamiento interactivo con el usuario de
 los datos ya que se destina principalmente a la analítica de
 negocios [8].
 
-#### D. mssqlR: 
-conexiones a distintas bases de datos con sintaxis
+>#### D. mssqlR: 
+Conexiones a distintas bases de datos con sintaxis
 de MySQL Server [9]
 
-#### E.. knitr: 
-generación de informes integrados a procesos realizados en códigos de programación.
+>#### E.. knitr: 
+Generación de informes integrados a procesos realizados en códigos de programación.
 
 ### VI. FRONTERA
 Una vez realizados los clásicos procesos que
@@ -272,7 +273,7 @@ mencionar los siguientes procesos:
 
 #### A. Minería de datos
 
-##### 1) Análisis de segmentos: implementar algoritmos de
+>##### 1) Análisis de segmentos: implementar algoritmos de
 segmentación con los que se pueda entender cómo se
 componen las agrupaciones por ejemplo de clientes de una
 empresa. Saber cuáles clientes se parecen más unos que con
@@ -280,12 +281,12 @@ los otros.
 
 ![ejemplo de clusters](images/Screen Shot 2021-02-04 at 09.10.20.png){width=70%}
 
-##### 2) Regresiones lineales: por medio de estos procesos
+>##### 2) Regresiones lineales: por medio de estos procesos
 de la estadística realizar predicciones sobre los valores que
 pueda tener una determinada variable en el tiempo.
 
 
-##### 3) Clasificaciones : para determinado problema de
+>##### 3) Clasificaciones : para determinado problema de
 una organización donde sea necesario mediante una serie de
 características, atributos, lograr efectuar una clasificación de
 un ejemplo nuevo.
