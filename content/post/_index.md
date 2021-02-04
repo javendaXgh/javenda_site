@@ -10,7 +10,7 @@ view: 2
 # Optional header image (relative to `static/media/` folder).
 header:
   caption: ""
-  image: "En_construccion.jpg"
+  image: ""
   height: '100px'
   
 ---
