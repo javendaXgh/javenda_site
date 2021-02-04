@@ -99,7 +99,7 @@ sepamos que todos estos paquetes están disponibles para libre
 uso de la comunidad de manera libre y sin ninguna
 correspondencia de pago .
 
-#### B. Entornos de desarrollo ; R-Studio
+#### B. Entornos de desarrollo:
 Para este lenguaje se disponen pocas opciones de
 entorno de desarrollo integrado (IDE) siendo algunas de ellas:
 
