@@ -313,6 +313,8 @@ constituye una posible fuente de ingreso a la que se le puede
 sumar el mantenimiento de las plataformas que se
 implementen.
 
+---
+
 ### REFERENCIAS
 [1] W.J. Owen, The R Guide Version 2.5, Department of Mathematics and
 Computer Science, University of Richmond, 2010.
