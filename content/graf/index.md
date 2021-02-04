@@ -9,9 +9,9 @@ title: Visualizaciones
 view: 12
 
 # Optional header image (relative to `static/media/` folder).
-header:
-  caption: ""
-  image: ""
+#header:
+  #caption: ""
+  #image: ""
 
 ---
 ---
