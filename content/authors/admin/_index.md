@@ -65,13 +65,19 @@ social:
 email: "javenda@gmail.com"
 ---
 
-Soy un economista con estudios en ciencias de la computación dedicado a la investigación y práctica del --Machine Learning--  principalmente enfocado en el Procesamiento del Lenguaje Natural (NLP).
+Soy un economista con estudios en ciencias de la computación dedicado a la investigación y práctica del -- Machine Learning --  principalmente enfocado en el Procesamiento del Lenguaje Natural (NLP).
 
-Previamente trabajé en la administración pública de Venezuela en distintos cargos como profesional tributario y posteriormente en cargos directivos gerenciales, principalmene el área de registros electrónicos y procedimientos en distintas administraciones tributarias.
+Previamente trabajé en la administración pública de Venezuela en distintos cargos como profesional tributario y posteriormente en cargos directivos gerenciales, principalmente en el área de registros electrónicos y procedimientos en distintas administraciones tributarias.
 
 En la administración tributaria nacional de Venezuela estuve a cargo del proyecto de emisión electrónica del Registro de Información Fiscal (RIF).
 
-También son  mis áreas de interés el procesamiento y la visualización de datos, la estadística junto con distintas técnicas que me permiten ser un aprendiz de la Ciencia de Datos. 
+Mi paso por la administración pública me dejó un profundo interés por el diseño e implementación de políticas públicas que obren en brindar soluciones a los ciudadanos.
 
+Igualmente quiero impulsar en Venezuela el movimiento de datos abiertos (opendata) ya que estoy absolutamente seguro que el uso y análisis de los datos por parte de los ciudadanos puede coadyuvar a crear una mejor sociedad en paralelo con la educación que logre el alfabetismo digital en los tiempos del Big Data, fake news y abiertas manipulaciones con el uso de medios digitales.
+
+También son  mis áreas de interés el procesamiento y la visualización de datos, la estadística junto con distintas técnicas que me convierten en un permanente aprendiz de la Ciencia de Datos.
+  
 Actualmente trabajo como consultor en las áreas mencionadas.
 
+-- 
+José M. Avendaño
