@@ -16,13 +16,19 @@ organizations:
 # Short bio (displayed in user profile at end of posts)
 bio: Investigación y desarrollo de productos de Machine Learning.
 
-#intereses:
-#- Inteligencia Artificial
-#- Machine Learning
-#- NLP - Procesamiento del Lenguaje Natural
+interests:
+- Inteligencia Artificial
+- Machine Learning
+- NLP - Procesamiento del Lenguaje Natural
+- Estadística
 
 education:
+
   courses:
+  - course: Maestría en Ciencias de la Computación (escolaridad culminada en proceso de culminación del TEG)
+    institution: Universidad Central de Venezuela
+    year: presente
+  
   - course: Especialización en Procesamiento del Lenguaje Natural
     institution: Coursera- Deeplearning.ai
     year: 2020 - 2021
@@ -35,6 +41,9 @@ education:
   - course: Especialización en Ciencia de Datos
     institution: Coursera - Johns Hopkins University
     year: 2017
+  - course: Economía
+    institution: Universidad Central de Venezuela
+    year: 2002
 
 
 # Social/Academic Networking
@@ -52,10 +61,15 @@ social:
   icon_pack: fab
   link: https://github.com/javendaXgh
   
-- icon: book
-  icon_pack: fa
+- icon: cv
+  icon_pack: ai
   link: files/cv.pdf
-  legend: curesafdvv
+  legend: Currículo
+  
+#- icon: book
+#  icon_pack: fa
+#  link: files/cv.pdf
+#  legend: curesafdvv
   
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.

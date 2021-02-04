@@ -4,38 +4,38 @@
   translation: Toggle navigation
 
 - id: table_of_contents
-  translation: Tabla de contenidos
+  translation: Table of Contents
 
 - id: on_this_page
-  translation: Contenidos
+  translation: Contents
 
 - id: back_to_top
-  translation: Ir al inicio
+  translation: Back to top
 
 # General
 
 - id: related
-  translation: Relacionado
+  translation: Related
 
 - id: minute_read
-  translation: min de lectura
+  translation: min read
 
 - id: previous
-  translation: Previo
+  translation: Previous
 
 - id: next
-  translation: Siguiente
+  translation: Next
 
 - id: figure
-  translation: "Figura %d:"
+  translation: "Figure %d:"
 
 - id: edit_page
-  translation: Editar esta página
+  translation: Edit this page
 
 # Themes
 
 - id: theme_selector
-  translation: Mostrar preferencias
+  translation: Display preferences
 
 - id: theme_light
   translation: Light
@@ -44,7 +44,7 @@
   translation: Dark
 
 - id: theme_auto
-  translation: Automatico
+  translation: Automatic
 
 # Buttons
 
@@ -58,42 +58,42 @@
   translation: Cite
 
 - id: btn_slides
-  translation: Láminas
+  translation: Slides
 
 - id: btn_video
   translation: Video
 
 - id: btn_code
-  translation: Código
+  translation: Code
 
 - id: btn_dataset
   translation: Dataset
 
 - id: btn_project
-  translation: Projecto
+  translation: Project
 
 - id: btn_poster
   translation: Poster
 
 - id: btn_source
-  translation: Documento fuente
+  translation: Source Document
 
 - id: btn_copy
-  translation: Copia
+  translation: Copy
 
 - id: btn_download
-  translation: Descargar
+  translation: Download
 
 # About widget
 
 - id: interests
-  translation: Intereses
+  translation: Interests
 
 - id: education
-  translation: Educación
+  translation: Education
 
 - id: user_profile_latest
-  translation: Reciente
+  translation: Latest
 
 # Accomplishments widget
 
@@ -103,63 +103,64 @@
 # Experience widget
 
 - id: present
-  translation: Presente
+  translation: Present
 
 # Pages widget
 
 - id: more_pages
-  translation: Ver todos
+  translation: See all
 
 - id: more_posts
-  translation: Ver todos las publicaciones
+  translation: See all posts
 
 - id: more_talks
-  translation: Ver todas las charlas
+  translation: See all talks
 
 - id: more_publications
-  translation: Ver todas las publicaciones
+  translation: See all publications
 
 # Contact widget
 
 - id: contact_name
-  translation: Nombre
+  translation: Name
 
 - id: contact_email
   translation: Email
 
 - id: contact_message
-  translation: Mensaje
+  translation: Message
 
 - id: contact_send
-  translation: Envíar
+  translation: Send
 
 - id: book_appointment
-  translation: Agendar una cita
+  translation: Book an appointment
 
 # Publication/Talk details
 
 - id: abstract
-  translation: Resumen
+  translation: Abstract
 
 - id: publication
-  translation: Publicación
+  translation: Publication
 
 - id: publication_type
-  translation: Tipo
+  translation: Type
 
 - id: date
-  translation: Fecha
+  translation: Date
 
 - id: last_updated
-  translation: Última actualización
+  translation: Last updated on
+
 - id: event
-  translation: Evento
+  translation: Event
 
 - id: location
-  translation: Localización
+  translation: Location
 
 - id: pub_uncat
-  translation: Sin categoría
+  translation: Uncategorized
 
 - id: pub_conf
   translation: Conference paper
@@ -171,10 +172,10 @@
   translation: Preprint
 
 - id: pub_report
-  translation: Reporte
+  translation: Report
 
 - id: pub_book
-  translation: Libro
+  translation: Book
 
 - id: pub_book_section
   translation: Book section
@@ -188,7 +189,7 @@
 # Project details
 
 - id: open_project_site
-  translation: Ir al site del Proyecto
+  translation: Go to Project Site
 
 # Content types for default archive page titles and search results
 
@@ -196,46 +197,46 @@
   translation: Posts
 
 - id: publications
-  translation: Publicaciones
+  translation: Publications
 
 - id: talks
-  translation: Charlas
+  translation: Talks
 
 - id: projects
-  translation: Proyectos
+  translation: Projects
 
 - id: slides
-  translation: Presentaciones
+  translation: Slides
 
 # Search
 
 - id: search
-  translation: Buscar
+  translation: Search
 
 - id: search_placeholder
-  translation: Buscar...
+  translation: Search...
 
 - id: search_results
-  translation: resultados encontrados
+  translation: results found
 
 - id: search_no_results
-  translation: Sin resultados
+  translation: No results found
 
 # Error 404
 
 - id: page_not_found
-  translation: Página n encontrada
+  translation: Page not found
 
 - id: 404_recommendations
-  translation: Quizas le pueda interesar esto?
+  translation: Perhaps you were looking for one of these?
 
 # Cookie consent
 
 - id: cookie_message
-  translation: Este sitio contiene cookies para mejorar la experiencia.
+  translation: This website uses cookies to ensure you get the best experience on our website.
 
 - id: cookie_dismiss
-  translation: Listo!
+  translation: Got it!
 
 - id: cookie_learn
-  translation: Aprender más
+  translation: Learn more
