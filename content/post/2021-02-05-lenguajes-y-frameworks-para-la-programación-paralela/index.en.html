@@ -1,0 +1,197 @@
+---
+title: Lenguajes y Frameworks para la Programación Paralela
+author: José Miguel Avendaño I.
+date: '2021-02-05'
+slug: lenguajes-y-frameworks-para-la-programación-paralela
+categories:
+  - reportes técnicos
+tags:
+  - sistemas distribuidos
+  - software
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-02-05T10:53:07-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+<script src="{{< blogdown/postref >}}index.en_files/header-attrs/header-attrs.js"></script>
+
+
+<div id="i.-introducción" class="section level3">
+<h3>I. INTRODUCCIÓN</h3>
+<p>Nuestra sociedad en las últimas seis décadas ha querido tener computadores más potentes, es decir, con mayor poder de cálculo para poder realizar operaciones más complejas. Esta necesidad a obedecido a poder procesar las grandes cantidades de datos que se están generando producto de la masiva digitalización en nuestra sociedad lo que constituye un apetito insaciable de permantente crecimiento.
+No obstante aunque se ha incrementado de velocidad de los procesadores, a que se ha reducido el tamaño de los transistores, inclusive, aunque surgieron los multi procesadores, pareciera que no se satisfacen los requerimientos de procesamiento de grandes volúmenes de datos.
+Una de las formas en que se han abordado los problemas de necesidad de incremento de computo es mediante la filosofía “Divide et impera”: divide y conquista.</p>
+<p>Computadoras paralelas como por ejemplo el procesamiento en la nube son soluciones al problema planteado.Es por esto que todo este poder se complementa con la necesidad de tener lenguajes de programación y frameworks que hagan posible el desarrollo de programas y softwares que posibiliten el “computo paralelo y distribuido” mediante la distribución de tareas, compilación, es decir, coordinar los pases de mensajes y así poder emplear todo ese poderío.</p>
+<p>En el presente reporte técnico vamos a abordar algunos lenguajes y frameworks que son parte del mundo de los sistemas paralelos y distribuidos.</p>
+</div>
+<div id="ii.-breve-historia" class="section level3">
+<h3>II. BREVE HISTORIA</h3>
+<p>Con el surgimiento de las computadoras paralelas de memoria compartida (SMP) se hizo necesario contar con aplicaciones individuales que pudiesen hacer uso de de este poder de cómputo.
+Los compiladores eran en un tiempo los encargados de adaptar la aplicación para que pudiese usar el paralelismo interno de la máquina lo que resultaba en un proceso engorroso al tener que detectar cuáles eran las líneas de código susceptibles de ser ejecutadas en paralelo. En el camino fueron tratando de adoptar instrucciones o directivas que pudiesen ser incorporadas en lenguajes secuenciales como Fortran, pero el problema seguía existiendo porque un programa que era escrito para una máquina paralela con memoria compartida no se podía usar en otra.</p>
+<p>El Parallel Computing Forum (PCF) en la decada de los ochenta trabajó en una serie de directivas para definir como se podían ejecutar loops paralelos en Fortran, las cuales fueron aprobadas en 1991 dando el inicio al establecimiento de estándares en la industria informática para el uso de programas paralelos. Ya a mediados de los 90´s se aprueba el OpenMP que es una interfaz de programación de aplicaciones para memoria compartida que facilita la programación de máquinas paralelas con memora compartida. Tuvo sus orígenes en los trabajos que había hecho el PCF. Inicialmente la primera versión de 1997 usaba Fortran como lenguaje pero rápidamente se fueron sumando C y C++. En la actualidad este estándar está disponible para todas las plataformas de SMP.</p>
+</div>
+<div id="iii.-lenguajes-de-programación-paralela" class="section level3">
+<h3>III. LENGUAJES DE PROGRAMACIÓN PARALELA</h3>
+<p>Muchos lenguajes sirven para realizar programación paralela. Dados los requerimientos de la aplicación es en lo que se basará la adopción de un determinado lenguaje dada la utilidad que represente. Lo importante es que el lenguaje sea capaz de soportar técnicas de paralelización.
+Podemos acá mencionar algunos que consideran como un aspecto muy importante en su diseño e implementación el paralelismo:</p>
+<p>A. BLOOM: es un lenguaje para la nube y otros sistemas distribuidos. Es un proyecto de investigación de la Universidad de California, Berkeley, dentro de un proyecto mayor de facilitar la elaboración de software para aplicaciones distribuidas. Originalmente se desarrolló con Ruby pero luego evolucionó a ser propiamente un lenguaje. La última versión fue lanzada en 2013.</p>
+<p>B. HERMES: es un lenguaje para programación distribuida que fue desarrollado por IBM entre 1986 y 1992 con un compilador de código abierto.</p>
+<p>C. SAWZALL: es un lenguaje de programación de procedimiento específico del dominio(domain-specific), utilizado por Google para procesar un gran número de registros de log´s individuales. Sawzall hizo su entrada en 2003. Sawzall ha sido reemplazado por Lingo (logs en Go) para la mayoría de los propósitos dentro de Google.</p>
+<p>D. GO: (también conocido como Golang) es un lenguaje de programación compilado y escrito estáticamente diseñado en Google por Robert Griesemer, Rob Pike y Ken Thompson. Go es similar sintácticamente a C, pero con seguridad de memoria, recolección de “garbage”, escritura estructural y concurrencia al estilo CSP. Es Idóneo para la programación paralela. Aunque las características de concurrencia de Go no están dirigidas principalmente al procesamiento paralelo,pueden ser usadas para programar máquinas multiprocesadoras de memoria compartida.</p>
+<p>E. JULIA: es un lenguaje de programación dinámico de alto nivel de propósito general[13] diseñado para el análisis numérico de alto rendimiento y la ciencia computacional. También es útil para la programación de sistemas de bajo nivel, como lenguaje de especificación,con el trabajo que se está realizando en el cliente y el uso de la web del servidor. Los aspectos distintivos del diseño de Julia incluyen un sistema tipo con polimorfismo paramétrico y tipos en un lenguaje de programación totalmente dinámico y el envío múltiple como su paradigma central de programación. Permite la computación concurrente, paralela y distribuida, y la llamada directa de bibliotecas C y Fortranlibraries sin código de pegamento.</p>
+<p>F. LIMBO: es un lenguaje de programación para escribir sistemas distribuidos y es el lenguaje utilizado para escribir aplicaciones para el sistema operativo Inferno. Fue diseñado en Bell Labs por Sean Dorward, Phil Winterbottom y Rob Pike.El compilador Limbo genera código de objeto independiente de la arquitectura que luego es interpretado por la máquina virtual Dis o compilado justo antes del tiempo de ejecución para mejorar el rendimiento. Por lo tanto, todas las aplicaciones de Limbo son completamente portátiles en todas las plataformas de Inferno.</p>
+<p>G. Multithreaded, Parallel, and Distributed Programming (MPD): es un lenguaje de programación concurrente cuya sintaxis se deriva de la utilizada en el libro Fundamentos de la Programación Multihilo, Paralela y Distribuida. El nombre enumera las características distintivas del lenguaje, es decir, que soporta las tres técnicas de programación concurrentes.MPD se implementa como una variante del lenguaje de programación SR. Tiene un analizador (parser) diferente, pero utiliza el mismo sistema intermedio de forma y tiempo de ejecución (form and run-time system). En consecuencia el MPD proporciona la misma variedad de mecanismos de programación concurrente que la RS. Los programas MPD pueden ejecutarse en procesadores individuales, multiprocesadores de memoria compartida o clusters de procesadores (homogéneos). La implementación soporta de forma transparente una variedad de diferentes tipos de procesadores y sistemas Unix.</p>
+<p>H. CHAPEL: es un lenguaje de alta productividad en programación paralela de Cascade (Cascade High Productivity Language), e desarrollado por la empresa Cray Inc, que se está desarrollando como parte del proyecto Cray Cascade, participante en el programa High Productivity Computing Systems (HPCS) de DARPA, cuyo objetivo era aumentar la productividad de los superordenadores para el año 2010. Está siendo desarrollado como un proyecto de código abierto, bajo la versión 2 de la licencia Apache.</p>
+<p>I. POSIX Threads: normalmente conocidos como pthreads, es un modelo de ejecución que existe independientemente de un lenguaje, así como un modelo de ejecución paralelo. Permite que un programa controle múltiples flujos de trabajo diferentes que se superponen en el tiempo. Cada flujo de trabajo se denomina hilo, y la creación y el control de estos flujos se consigue realizando llamadas a la API de POSIX Threads. POSIX Threads es una API definida por el estándar POSIX.1c, extensiones Threads (IEEE Std 1003.1c-1995). Las implementaciones de la API están disponibles en muchos sistemas operativos similares a Unix que cumplen con POSIX, como FreeBSD, NetBSD, OpenBSD, Linux, Mac OS X, Android, Solaris y AUTOSAR Adaptive, que normalmente se incluyen como librería libpthread. También existen implementaciones de DR-DOS y Microsoft Windows: dentro del subsistema SFU/SUA que proporciona una implementación nativa de un número de APIs POSIX, y también dentro de paquetes de terceros como pthreads-w32 que implementa pthreads sobre las APIs existentes de Windows.</p>
+</div>
+<div id="iv.-frameworks-para-la-programación-paralela" class="section level3">
+<h3>IV. frameworks para la programación paralela</h3>
+<p>Los frameworks se pueden considerar como un conjunto de componentes que forman un rompecabezas donde algunas de las piezas no se encuentran y deben ser provistas por el programador final. Se entiende que el framework es un conjunto estandarizado de conceptos, prácticas y criterios para enfocar un tipo de problemática particular que sirve como referencia, para enfrentar y resolver nuevos problemas de índole similar.
+Acá mencionamos algunos usados para la programación paralela:</p>
+<ol style="list-style-type: decimal">
+<li>MapReduce: es un modelo de programación para dar soporte a la computación paralela sobre grandes colecciones de datos en grupos de computadoras y al commodity computing. El nombre del framework está inspirado en los nombres de dos importantes métodos, macros o funciones en programación funcional: Map y Reduce. MapReduce ha sido adoptado mundialmente, ya que existe una implementación OpenSource denominada Hadoop. Su desarrollo fue liderado inicialmente por Yahoo y actualmente lo realiza el proyecto Apache. En esta década del 2010 existieron diversas iniciativas similares a Hadoop tanto en la industria como en el ámbito académico. Se han escrito implementaciones de bibliotecas de MapReduce en diversos lenguajes de programación como C++, Java y Python. Es usado por google para el procesamiento de grandes datasets.</li>
+</ol>
+<p><br></p>
+<ol start="2" style="list-style-type: decimal">
+<li>MapIterativeReduce: es un framework alternativo que amplía el modelo de programación de MapReduce para soportar mejor las aplicaciones de intensivo “reduce”, a la vez que mejora sustancialmente su eficiencia eliminando la barrera implícita entre la fase de Map y la de Reduce.</li>
+</ol>
+<p><br></p>
+<ol start="3" style="list-style-type: decimal">
+<li>Apache Hadoop: de Yahoo distribuye cadenas de datos alrededor de un conjunto. Desde un nodo individual a una cantidad inmensa de nodos. Lídia muy bien con la falla en algún nodo.</li>
+</ol>
+<p><br></p>
+<ol start="4" style="list-style-type: decimal">
+<li>Apache Spark: es un entorno de computación en clúster de código abierto distribuido de propósito general. Originalmente desarrollado en la Universidad de California, el AMPLab de Berkeley, el código base de Spark fue donado posteriormente a la Apache Software Foundation, que lo ha mantenido desde entonces. Spark proporciona una interfaz para la programación de clusters completos con paralelismo de datos implícito y tolerancia a fallos. Apache Spark tiene como base arquitectónica el resiliente conjunto de datos distribuido (RDD), un multiset de sólo lectura de elementos de datos distribuidos en un cluster de máquinas, que se mantiene de forma tolerante a fallos. La API de Dataframe fue lanzada como una abstracción sobre el RDD, seguida por la API de Dataset. En Spark 1.x, el RDD era la principal interfaz de programación de aplicaciones (API), pero a partir de Spark 2.x se fomenta el uso de la API de conjuntos de datos, aunque la API de los RDD no está obsoleta La tecnología RDD sigue siendo la base de la API de conjuntos de datos. Spark y sus RDDs fueron desarrollados en 2012 en respuesta a las limitaciones del paradigma de computación en clúster MapReduce, que obliga a una estructura de flujo de datos lineal particular en programas distribuidos: Los programas MapReduce leen los datos de entrada del disco, asignan una función entre los datos, reducen los resultados del mapa y almacenan los resultados de la reducción en el disco. Los RDDs de Spark funcionan como un conjunto de trabajo para programas distribuidos que ofrece una forma (deliberadamente) restringida de memoria compartida distribuida. Apache Spark: soporta Scala, Java y Python.</li>
+</ol>
+<p><br></p>
+<ol start="5" style="list-style-type: decimal">
+<li>Apache Beam: es un modelo de programación unificada de código abierto para definir y ejecutar ductos de procesamiento de datos, incluyendo ETL, procesamiento por lotes y por secuencias (continuo). Los ductos de haz se definen utilizando uno de los SDKs suministrados y se ejecutan en uno de los corredores soportados por Beam (back-ends de procesamiento distribuidos), incluyendo Apache Apex, Apache Flink, Apache Gearpump (incubación), Apache Samza, Apache Spark y Google Cloud Dataflow.</li>
+</ol>
+<p><br></p>
+<ol start="6" style="list-style-type: decimal">
+<li>Apache Flink: es un framework de código abierto para el procesamiento de streams desarrollado por la Apache Software Foundation. El núcleo de Apache Flink es un motor de flujo de datos de streaming distribuido escrito en Java y Scala. Flink ejecuta programas de flujo de datos arbitrarios de forma paralela a los datos y por canalización. El sistema de tiempo de ejecución por canalización de Flink permite la ejecución de programas de procesamiento de flujos de datos masivos/de lotes y de streaming. Además, el tiempo de ejecución de Flink soporta la ejecución de algoritmos iterativos de forma nativa. Proporciona un motor de streaming de alto rendimiento y baja latencia, así como soporte para el procesamiento de tiempo de eventos y la gestión de estados. Los programas pueden escribirse en Java, Scala,Python y SQL . Se compilan y optimizan automáticamente en programas de flujo de datos que se ejecutan en un entorno de clúster o de nube.</li>
+</ol>
+<p><br></p>
+<ol start="7" style="list-style-type: decimal">
+<li>SWARM: SoftWare and Algorithms for Running on Multicore) ha sido introducido como un framework de programación paralela de código abierto. Proporciona características básicas para la programación multihilo, como la sincronización, el control y la gestión de memoria, así como las operaciones colectivas. Es una librería de “primitives” que aprovecha al máximo los procesadores multinúcleo. SWARM está construido sobre hilos POSIX que permiten al usuario utilizar tanto los primitivos ya desarrollados como los primitivos de hilo directo. SWARM tiene construcciones para la paralelización, restringiendo el control de los hilos, la asignación y desasignación de memoria compartida, y primitivas de comunicación para la sincronización, replicación y difusión.</li>
+</ol>
+<p><br></p>
+<ol start="8" style="list-style-type: decimal">
+<li>Cóndor: Es un entorno de metacomputación que reside en un cluster de máquinas (llamado Condor Pool) y que observa sus características como media de carga. Si permite la utilización de las máquinas que están inactivas durante un período de tiempo significativo. Los usuarios envían sus trabajos a Condor, que posteriormente los ejecuta en máquinas inactivas, supervisa su progreso y finalmente informa al usuario al finalizar el trabajo. Cuando el dueño de una máquina regresa, Condor suspende o mata el trabajo que se ejecuta en esa máquina.</li>
+</ol>
+<p><br></p>
+<ol start="9" style="list-style-type: decimal">
+<li>MW: Es un framework que permite a los usuarios paralelizar fácilmente sus aplicaciones basadas en el entorno de metacomputación de Condor. MW es simple. Un gran cálculo se divide en una serie de tareas que se ejecutan en paralelo. El framework MW trabaja con Condor para encontrar unidades de procesamiento (máquinas) para estas tareas, manejar la comunicación, reasignar tareas si su máquina actual falla, y manejar la gran computación paralela.</li>
+</ol>
+<p><br></p>
+<ol start="10" style="list-style-type: decimal">
+<li>CUDA: es un framework de cálculo paralelo Compute Unified Device Architecture (Arquitectura Unificada de Dispositivos de Cómputo) que incluye un compilador y un conjunto de herramientas de desarrollo creadas por nVidia que permiten a los programadores usar una variación del lenguaje de programación C para codificar algoritmos en GPU de nVidia. Proporciona unas cuantas extensiones de C y C++ que permiten implementar el paralelismo en el procesamiento de tareas y datos con diferentes niveles de granularidad. El programador puede expresar ese paralelismo mediante diferentes lenguajes de alto nivel como C, C++ y Fortran o mediante estándares abiertos como las directivas de OpenACC. que por medio de wrappers se puede usar en Python, Fortran y Java adicional a C/C++.</li>
+</ol>
+<p><br></p>
+<ol start="11" style="list-style-type: decimal">
+<li>OpenCL - Open Computing Language: consta de una interfaz de programación de aplicaciones y de un lenguaje de programación. Juntos permiten crear aplicaciones con paralelismo a nivel de datos y de tareas que pueden ejecutarse tanto en unidades centrales de procesamiento como unidades de procesamiento gráfico. El lenguaje está basado en C++, eliminando cierta funcionalidad y extendiéndolo con operaciones vectoriales.El envío de trabajo para su ejecución en paralelo en OpenCL es similar a CUDA. Requiere que el programa anfitrión inicie las funciones del kernel. Los modelos de paralelismo de datos de CUDA y OpenCL son similares.</li>
+</ol>
+<p><br></p>
+<ol start="12" style="list-style-type: decimal">
+<li>Celery: es un framework para Python que ofrece mecanismos para disminuir las dificultades mientras crea sistemas distribuidos. El framework celery trabaja con el concepto de distribución de unidades de trabajo (tareas) mediante el intercambio de mensajes entre las máquinas que están interconectadas como una red, o trabajadores locales. Una tarea es el concepto clave en Celery ; cualquier tipo de trabajo que tengamos que distribuir tiene que estar encapsulado en una tarea de antemano.</li>
+</ol>
+<p><br></p>
+<ol start="13" style="list-style-type: decimal">
+<li>.NET: este framework da soporte para la programación paralela proporcionando un tiempo de ejecución, tipos de librerías de clases y herramientas de diagnóstico. Estas características, que se introdujeron con el .NET Framework 4, simplifican el desarrollo paralelo. Puede escribir código paralelo eficiente, de fina granularidad y escalable en un lenguaje natural sin tener que trabajar directamente con los hilos o el pool de hilos.</li>
+</ol>
+<p><br></p>
+<ol start="14" style="list-style-type: decimal">
+<li>Pig: es una plataforma de alto nivel para crear programas MapReduce utilizados en Hadoop. Pig abstrae la programación desde el lenguaje Java MapReduce en una notación que hace de MapReduce un programa de alto nivel, similar a la de SQL para sistemas RDBMS. Pig puede ser ampliado utilizando UDF (Funciones Definidas por el Usuario) que el usuario puede escribir en Java, Python, Javascript, Ruby o Groovy2 y luego llamar directamente desde el lenguaje.</li>
+</ol>
+<p><br></p>
+<ol start="15" style="list-style-type: decimal">
+<li>Intel Threading Building Blocks (Intel TBB): es una biblioteca basada en plantillas para C++ desarrollada por Intel para facilitar la escritura de programas que exploten las capacidades de paralelismo de los procesadores con arquitectura multinúcleo. Threading Building Blocks (TBB) permite escribir programas C++ paralelos que aprovechan el rendimiento multinúcleo, que son portátiles y componibles, y que tienen escalabilidad a prueba de futuro. Esta biblioteca proporciona algoritmos y estructuras de datos que permiten al programador evitar en parte las complicaciones derivadas del uso de los paquetes nativos de gestión de hilos de ejecución en los que la creación, sincronización y destrucción de los hilos es explícita y dependiente del sistema. En lugar de esto, la biblioteca abstrae el acceso a los múltiples procesadores permitiendo que las operaciones sean tratadas como tareas que se reparten automática y dinámicamente entre los procesadores disponibles mediante un gestor en tiempo de ejecución.</li>
+</ol>
+<p><br></p>
+<ol start="16" style="list-style-type: decimal">
+<li>FastFlow (FF): es un framework de programación paralela C++ que aboga por una programación paralela de alto nivel y basada en patrones. Soporta principalmente streaming y paralelismo de datos, dirigiéndose a plataformas heterogéneas compuestas por clusters de plataformas de memoria compartida, posiblemente equipadas con aceleradores informáticos como las GPGPU NVidia, Xeon Phi, Tilera TILE64. La filosofía de diseño principal de FastFlow es proporcionar a los diseñadores de aplicaciones las características clave para la programación paralela (por ejemplo, el tiempo de comercialización, la portabilidad, la eficiencia y la portabilidad del rendimiento) mediante abstracciones de programación paralela adecuadas y un soporte de tiempo de ejecución cuidadosamente diseñado.</li>
+</ol>
+<p><br></p>
+<ol start="17" style="list-style-type: decimal">
+<li>Charm++ es un lenguaje de programación paralelo orientado a objetos basado en C++ y desarrollado en el Laboratorio de Programación Paralela de la Universidad de Illinois en Urbana-Champaign. Charm+++ está diseñado con el objetivo de mejorar la productividad de los programadores proporcionando una abstracción de alto nivel de un programa paralelo al mismo tiempo que proporciona un buen rendimiento en una amplia variedad de plataformas de hardware subyacentes. Los programas escritos en Charm++ se descomponen en una serie de objetos que cooperan y que se denominan chares. Cuando un programador invoca un método en un objeto, el sistema en tiempo de ejecución de Charm++ envía un mensaje al objeto invocado, que puede residir en el procesador local o en un procesador remoto en un cálculo paralelo. Este mensaje desencadena la ejecución de código dentro del chare para manejar el mensaje asincrónicamente.</li>
+</ol>
+<p><br></p>
+<ol start="18" style="list-style-type: decimal">
+<li>Nephele: es un framework alternativo de procesamiento de datos a Hadoop que permite asignar las tareas particulares de un trabajo de procesamiento a diferentes tipos de máquinas virtuales y se encarga de su instanciación y terminación durante la ejecución del trabajo.</li>
+</ol>
+<p><br></p>
+<ol start="19" style="list-style-type: decimal">
+<li>Cactu: es un framework de código abierto que se ejecuta en muchas arquitecturas y que permite la computación en paralelo. Permite ejecutar aplicaciones en clusters o superordenadores.</li>
+</ol>
+<p><br></p>
+<ol start="20" style="list-style-type: decimal">
+<li>PetSc: Es una biblioteca que está diseñada para trabajar en programas paralelos. Proporciona una capa de abstracción por encima del MPI que permite a los usuarios centrarse en escribir programación paralela y no preocuparse por las operaciones de bajo nivel del MPI.</li>
+</ol>
+<p><br></p>
+<ol start="21" style="list-style-type: decimal">
+<li>Cilk: es un lenguaje de programación de propósito general diseñado para la programación paralela multihilos. La encarnación de C++ es conocida como Cilk+. El lenguaje Cilk ha sido desarrollado desde 1994 por el MIT Laboratorio de Ciencia de la Computación. El mismo está basado en ANSI C, con la incorporación de algunas palabras claves específicas de Cilk. Cuando estas palabras claves son eliminadas de un código escrito en Cilk, el resultado es un programa válido en el lenguaje C.</li>
+</ol>
+<p><br></p>
+<ol start="22" style="list-style-type: decimal">
+<li>Dryad: fue un proyecto de investigación en Microsoft Research para un tiempo de ejecución de propósito general para la ejecución de aplicaciones paralelas de datos. Microsoft puso a disposición varias versiones preliminares de esta tecnología como complementos de Windows HPC Server 2008 R2. Sin embargo, en octubre de 2011, Microsoft suspendió el desarrollo activo de Dryad, centrándose en el framework Apache Hadoop.</li>
+</ol>
+<p><br></p>
+<p><strong>Mención particular requieren OpenMP y MPI: </strong></p>
+<ol start="23" style="list-style-type: decimal">
+<li>OpenMP (Open Multi-Processing): es una interfaz de programación de aplicaciones (API) que soporta la programación de multiprocesamiento de memoria compartida multiplataforma en C, C++ y Fortran, en la mayoría de las plataformas, arquitecturas de conjuntos de instrucciones y sistemas operativos, incluyendo Solaris, AIX, HP-UX, Linux, macOS y Windows. Consiste en un conjunto de directivas del compilador, rutinas de biblioteca y variables de entorno que influyen en el comportamiento en tiempo de ejecución. Utiliza un modelo portátil y escalable que proporciona a los programadores una interfaz sencilla y flexible para desarrollar aplicaciones paralelas para plataformas que van desde el ordenador de sobremesa estándar hasta el superordenador.
+Una aplicación construida con el modelo híbrido de programación paralela puede ejecutarse en un clúster informático utilizando tanto OpenMP como Message Passing Interface (MPI), de modo que OpenMP se utiliza para el paralelismo dentro de un nodo (multinúcleo) mientras que MPI se utiliza para el paralelismo entre nodos. También se han realizado esfuerzos para ejecutar OpenMP en sistemas de memoria compartida distribuidos por software, para traducir OpenMP a MPI y para extender OpenMP a los sistemas de memoria no compartida.</li>
+</ol>
+<p><br></p>
+<ol start="24" style="list-style-type: decimal">
+<li>MPI: a pesar de no ser un framework la Interfaz de Paso de Mensajes (conocido ampliamente como MPI, siglas en inglés de Message Passing Interface) es un protocolo de comunicación entre computadoras. Es el estándar para la comunicación entre los nodos que ejecutan un programa en un sistema de memoria distribuida. Las implementaciones en MPI consisten en un conjunto de bibliotecas de rutinas que pueden ser utilizadas en programas escritos en los lenguajes de programación C, C++, Fortran y Ada. La ventaja de MPI sobre otras bibliotecas de paso de mensajes, es que los programas que utilizan la biblioteca son portables (dado que MPI ha sido implementado para casi toda arquitectura de memoria distribuida), y rápidos, (porque cada implementación de la biblioteca ha sido optimizada para el hardware en la cual se ejecuta).</li>
+</ol>
+<p>A lo largo de nuestra lectura recorrimos algunos de los lenguajes y frameworks usados en la computación paralela y de sistemas distribuidos. Como ocurre en otros campos de la computación y la ciencia cada día surgen avances y el desarrollo de nuevos métodos que resultan ser más eficientes o de propositos más específicos que permiten desarrollar tareas de una forma más rápida con mayor performance.</p>
+<hr />
+<blockquote>
+<p>El presente reporte técnico fue presentado en marzo de 2018 en la materia Sistemas Paralelos y Distribuidos de la Maestría en Ciencias de la Computación del postragrado de Ciencias de la Computación de la Facultad de Ciencias de la Universidad Central de Venezuela a cargo del prof. Dr. Andrés Sanoja.</p>
+</blockquote>
+</div>
+<div id="bibliografía" class="section level3">
+<h3>Bibliografía:</h3>
+<p>[1] Giancarlo Zaccone (2015). Python Parallel Programming Cookbook. Packt Publishing</p>
+<p>[2] Dobre Ciprian (2014) Parallel Programming Paradigms and Frameworks in Big Data Era. Artículo en International Journal of Parallel Programming.</p>
+<p>[3] <a href="http://bloom-lang.net/faq/" class="uri">http://bloom-lang.net/faq/</a></p>
+<p>[4] <a href="http://www.cs.ox.ac.uk/people/varun.kanade/docs/swarm-BKM07.pdf" class="uri">http://www.cs.ox.ac.uk/people/varun.kanade/docs/swarm-BKM07.pdf</a></p>
+<p>[5] Klemme Beverly (2016). Software Testing of Parallel Programming Framework. University of New México</p>
+<p>[6] Wu Renke (2017). SunwayMR: A distributed parallel computing framework with convenient data-intensive applications programming.</p>
+<p>[7] <a href="https://www.nvidia.es/object/cuda-parallel-computing-es.html" class="uri">https://www.nvidia.es/object/cuda-parallel-computing-es.html</a></p>
+<p>[8] <a href="https://es.wikipedia.org/wiki/OpenCL" class="uri">https://es.wikipedia.org/wiki/OpenCL</a></p>
+<p>[9] Gannouni, Sofien. (2015). A Gamma-calculus GPU-based parallel programming framework. 2015 2nd World Symposium on Web Applications and Networking, WSWAN 2015. 10.1109/WSWAN.2015.7210299.</p>
+<p>[10] Sofien GANNOUNI (2015) , The hardware support of parallelism/concurrency varies from shared memory multicore, closely coupled clusters, and higher-latency (possibly lower bandwidth) distributed systems</p>
+<p>[11] <a href="https://es.wikipedia.org/wiki/Cilk" class="uri">https://es.wikipedia.org/wiki/Cilk</a></p>
+<p>[12] Leiserson, Charles &amp; Plaat, Aske. (1997). Programming Parallel Applications in Cilk. Siam news.
+[13] <a href="https://docs.microsoft.com/en-us/dotnet/standard/parallel-programming/" class="uri">https://docs.microsoft.com/en-us/dotnet/standard/parallel-programming/</a></p>
+<p>[14] <a href="https://en.wikipedia.org/wiki/Dryad_(programming)" class="uri">https://en.wikipedia.org/wiki/Dryad_(programming)</a></p>
+<p>[15] <a href="https://en.wikipedia.org/wiki/Sawzall_(programming_language)" class="uri">https://en.wikipedia.org/wiki/Sawzall_(programming_language)</a></p>
+<p>[16] <a href="https://en.wikipedia.org/wiki/Go_(programming_language)#Suitability_for_parallel_programming" class="uri">https://en.wikipedia.org/wiki/Go_(programming_language)#Suitability_for_parallel_programming</a></p>
+<p>[17] <a href="https://es.wikipedia.org/wiki/Pig_(herramienta_de_programaci%C3%B3n)" class="uri">https://es.wikipedia.org/wiki/Pig_(herramienta_de_programaci%C3%B3n)</a></p>
+<p>[18] <a href="https://en.wikipedia.org/wiki/Hermes_(programming_language)" class="uri">https://en.wikipedia.org/wiki/Hermes_(programming_language)</a></p>
+<p>[19] <a href="https://en.wikipedia.org/wiki/Julia_(programming_language)" class="uri">https://en.wikipedia.org/wiki/Julia_(programming_language)</a></p>
+<p>[20] <a href="https://en.wikipedia.org/wiki/Limbo_(programming_language)" class="uri">https://en.wikipedia.org/wiki/Limbo_(programming_language)</a></p>
+<p>[21] <a href="https://en.wikipedia.org/wiki/MPD_(programming_language)" class="uri">https://en.wikipedia.org/wiki/MPD_(programming_language)</a></p>
+<p>[22] Renke Wu (2016) SunwayMR: A distributed parallel computing framework with convenient data-intensive applications programming</p>
+<p>[23] Jan Palanch (2014). Parallel Programming with Python</p>
+<p>[24] Roman Trobec (2018). Introduction to Parallel Computing</p>
+<p>[25] From Algorithms to Programming on State-of-the-Art Platforms. Springer</p>
+<p>[26] <a href="https://es.wikipedia.org/wiki/Interfaz_de_Paso_de_Mensajes" class="uri">https://es.wikipedia.org/wiki/Interfaz_de_Paso_de_Mensajes</a></p>
+<p>[27] <a href="http://calvados.di.unipi.it/fastflow" class="uri">http://calvados.di.unipi.it/fastflow</a></p>
+<p>[28] <a href="https://en.wikipedia.org/wiki/Charm%2B%2B" class="uri">https://en.wikipedia.org/wiki/Charm%2B%2B</a></p>
+<p>[29] <a href="https://en.wikipedia.org/wiki/OpenMP" class="uri">https://en.wikipedia.org/wiki/OpenMP</a></p>
+<p>[30] <a href="https://en.wikipedia.org/wiki/Apache_Beam" class="uri">https://en.wikipedia.org/wiki/Apache_Beam</a></p>
+<p>[31] <a href="https://en.wikipedia.org/wiki/Apache_Flink" class="uri">https://en.wikipedia.org/wiki/Apache_Flink</a></p>
+<p>[32] <a href="https://en.wikipedia.org/wiki/Apache_Spark" class="uri">https://en.wikipedia.org/wiki/Apache_Spark</a></p>
+<p>[33] <a href="https://es.wikipedia.org/wiki/MapReduce" class="uri">https://es.wikipedia.org/wiki/MapReduce</a></p>
+<p>[34] <a href="https://www.sciencedirect.com/science/article/pii/S0167739X17300584" class="uri">https://www.sciencedirect.com/science/article/pii/S0167739X17300584</a></p>
+</div>
