@@ -1,0 +1,391 @@
+---
+title: Aspectos de Desarrollo de Aplicaciones Móviles
+author: Rosana M. Vargas Boset & José Miguel Avendaño I. 
+date: '2021-02-05'
+slug: aspectos-de-desarrollo-de-aplicaciones-móviles
+categories:
+  - reportes técnicos
+tags:
+  - mobille app
+  - web app
+  - aplicación movil
+  - metodología agil
+  - ingeniería del software
+  - software
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-02-05T12:02:42-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+<script src="{{< blogdown/postref >}}index.en_files/header-attrs/header-attrs.js"></script>
+
+
+<blockquote>
+<p>El presente documento fue escrito por Rosana M. Vargas Boset y José Miguel Avendaño para la materia Ingeniería de Software del Postrgrado de Ciencias de la Computación de la Facultad de Ciencias de la Universidad Central de Venezuela a cargo de la Profa. Dra. Vanessa Leguizano en mayo de 2020.</p>
+</blockquote>
+<div id="i.-introdución" class="section level3">
+<h3>I. INTRODUCIÓN</h3>
+<p>En el mundo actual es más común tener un teléfono inteligente o tablet a la mano que una laptop o una computadora de escritorio, razón por la cual recurrimos a realizar diversas tareas en estos dispositivos, ya que resulta más rápido y sencillo el uso de los mismos. Es a estos dispositivos a los cuales denominaremos a lo largo de este artículo como “dispositivos móviles”.</p>
+<p>Se entiende por un dispositivo móvil aquel que es un computador lo suficientemente pequeño para que quepa en la mano o de alguna manera pueda ser fácilmente transportable, llegando en algunos casos a estar sujetos al cuerpo humano similar a como se porta un reloj tradicional. Estos aparatos generalmente incorporan alguna interface de interacción con los usuarios como una pantalla táctil.</p>
+<p>Algunos dispositivos móviles vienen a mejorar o hacer con procesamiento electrónico tareas que anteriormente ejecutaban aparatos análogos pudiendo colocar de ejemplo un teléfono o una cámara fotográfica. Igualmente tenemos que existen tareas que eran realizadas exclusivamente por computadores de escritorio y/o laptops que el desarrollo y miniaturización de los procesadores ha permitido que puedan ser ejecutadas por estos dispositivos portátiles.</p>
+<p>Adicionalmente han surgido nuevos sensores y desarrollos que han abierto un nuevo catálogo de funcionalidades que pueden ejecutar estos dispositivos traspasando la barrera de solo replicar funcionalidades o de ser asistentes personales, a ser aparatos con su propia definición, alcance y características. En el trabajo de investigación de Moustefaoui se señala que “la multitud de sensores disponibles en los dispositivos móviles como el GPS, la detección de luz ambiental y los acelerómetros han ampliado el uso de las aplicaciones móviles en diversos ámbitos de utilidad”.</p>
+<p>Los dispositivos móviles necesitan contar con aplicaciones de software que sean capaces de usar el poder de computo de los mismos y es a estos softwares a los que se les denomina “apps” las cuales son desarrolladas con requerimientos, objetivos y capacidades específicas (Minelli and Lanza, 2013) haciendo que tengan características y entornos de uso diversos, dentro del contexto de una plataforma móvil con o sin conexión a la red.</p>
+<p>Los desarrolladores de las aplicaciones móviles esperan que ellas funcionen con múltiples sistemas operativos, varios tamaños de pantalla y diversas tecnologías. En paralelo se realizan las consideraciones necesarias para evaluar la disponiblidad de acceso a las distintas vías de telecomunicación disponibles para el dispositivo (conexión de datos, red de telefonía, disponibilidad de WIFI, uso del bluetooth).</p>
+<p>Esto hace de las aplicaciones móviles un aliado importante en esta era digital, donde cada vez se están creando mayores necesidades de disponibilidad de funcionalidades en estos dispositivos, lo cual genera demandas por parte de los usuarios para disponer de aplicaciones que le permitan resolver sus tareas rápidamente, socializar, entretenerse en los tiempo de ocio o simplemente mantenerse informado teniendo presente que todo esto debe realizarse de una manera cómoda e intuitiva.</p>
+<p>Se desarrollan en este documento los elementos importantes a tomar en cuenta para el desarrollo de aplicaciones móviles, desde aspectos de diseño, pasando por metodologías agiles para realizar el ciclo de desarrollo de una aplicación móvil, los diferentes desarrollos dependiendo del tipo de aplicación móvil escogido (nativo, híbrido o web), cada una de ellas tiene propiedades específicas según la tecnología que se necesita para crearlas, propiedades diferentes incluso de las usadas para desarrollar aplicaciones de escritorio, así como los frameworks disponibles para su desarrollo y la revisión de los teléfonos inteligentes como ejemplo del dispositivo móvil con mayor aceptación y uso en la sociedad.</p>
+<p>Adicional a esta Introducción, el artículo se compone de siete secciones más. En la segunda sección se hace una aproximación a lo que representa el dispositivo móvil de mayor uso que es el teléfono celular inteligente. En la tercera se exponen las generalidades para el desarrollo de Aplicaciones Móviles, mientras que en la cuarta se abordan Metodologías Agiles para el desarrollo de Aplicaciones Móviles. Es en la quinta que se describen los tipos de Aplicaciones según su desarrollo. La sexta sección se hace referencia a algunos frameworks disponibles para el desarrollo y los enfoques tecnológicos de software. En la sección séptima se realiza una proyección a lo que puede ser el futuro de las aplicaciones móviles y en la sección octava se presentan las conclusiones.</p>
+</div>
+<div id="ii.-teléfonos-inteligentes" class="section level3">
+<h3>II. TELÉFONOS INTELIGENTES</h3>
+<p>Antes de entrar propiamente al tópido del desarrollo de aplicaciones móviles queremos exponer algunos puntos sobre el dispositivo móvil de uso más generalizado que son los smartphones (teléfonos inteligentes).</p>
+<p>En el más reciente lustro el uso de los teléfonos celulares por parte de la población mundial, que se espera que sean 7,79 millardos de habitantes para finales de 2020, ha crecido de un 56% en 2015 al 61%, lo que representa que actualmente están activos unos 4,78 millardos de teléfonos celulares (ver Fig. 1) . Adicionalmente en aras de contextualizar a la realidad local este informe se incluyen las cifras de nuestro país Venezuela, las cuales muestran una disminución sostenida en los últimos 5 años pasando del 101% de penetración, cifra equivalente a 31,5 millones de teléfonos al 62% que son 19,8 millones de teléfonos para una población promedio de 31,2 millones de habitantes (ver Fig. 2).</p>
+<div class="figure">
+<img src="images/Screen%20Shot%202021-02-05%20at%2012.05.59.png" width="450" alt="" />
+<p class="caption">Fig. 1. Población vs teléfonos en el mundo según datos extraidos de [8] y [10]</p>
+</div>
+<div class="figure">
+<img src="images/Screen%20Shot%202021-02-05%20at%2012.06.03.png" width="450" alt="" />
+<p class="caption">Fig. 2. Población vs unidades telefonicas en Venezuela según datos extraidos de [11]</p>
+</div>
+<p>A pesar de la considerable caída en la penetración de los teléfonos celulares y su uso por parte de los venezolanos, las cifras actuales se equiparan perfectamente al promedio de uso mundial.</p>
+<p>Estas cifras fácilmente permiten deducir que los teléfonos están omnipresentes en nuestra sociedad y las razones que motivan tan intenso uso no se limitan al hecho de contar con un aparato que permita la comunicación telefónica sino en las diversas funcionalidades con que se puede contar al adoptar su uso.</p>
+<p>Si bien todos los teléfonos celulares son digitales, existe un grupo que se denomina “smartphones” (teléfonos inteligentes) conformado por aquellos que cuentan con una plataforma informática que los convierten en una computadora de bolsillo, siendo estos los que particularmente interesan para el ámbito de estudio de este informe técnico, ya que en ellos es donde más se diversifica la oferta de aplicaciones disponibles, las cuales al ser instaladas potencian a diversos ámbitos, distintos al de la comunicación telefónica celular, el uso de los teléfonos.</p>
+</div>
+<div id="iii.-aplicaciones-móviles-concepto-y-generalidades-del-desarrollo-de-aplicaciones-para-dispositivos-móviles" class="section level3">
+<h3>III. APLICACIONES MÓVILES: CONCEPTO Y GENERALIDADES DEL DESARROLLO DE APLICACIONES PARA DISPOSITIVOS MÓVILES</h3>
+<div id="a.-concepto" class="section level4">
+<h4>A. Concepto:</h4>
+<p>Una aplicación móvil o una app (acortamiento del inglés application), es una aplicación informática diseñada para ser ejecutada en teléfonos inteligentes, tabletas y otros dispositivos móviles. En esencia, una aplicación no deja de ser un software.
+Para entender un poco mejor el concepto, podemos decir que las aplicaciones son para los móviles lo que los programas son para los ordenadores de escritorio.</p>
+</div>
+<div id="b.-categorías-de-aplicaciones" class="section level4">
+<h4>B. Categorías de aplicaciones</h4>
+<p>Una forma de agrupar las aplicaciones es de acuerdo al tipo de contenido que ofrecen al usuario. La categoría a la que se pertenezca condicionará, a nivel de diseño, con qué nivel de detalle contará la interfaz.</p>
+<p><strong>Entretenimiento:</strong> este es el lugar donde se ubican las apps de juegos y aquellas que de una forma u otra, proponen diversión para el usuario.</p>
+<p><strong>Sociales:</strong> las aplicaciones sociales son aquellas que se orientan principalmente a la comunicación entre personas, construcción de redes de contactos e interacción entre usuarios.</p>
+<p><strong>Utilitarias y productividad:</strong> las asociadas con el sector empresarial, las aplicaciones utilitarias proporcionan herramientas para solucionar problemas bastante específicos y se basan en la ejecución de tareas concretas, cortas y rápidas. En este caso se privilegia la eficiencia sobre todo lo demás.</p>
+<p><strong>Educativas o informativas:</strong> las aplicaciones educativas y de información se usan como transmisores de conocimiento y noticias</p>
+<p><strong>Creativas:</strong> estas aplicaciones ponen el foco en la creatividad del usuario y en ofrecerle herramientas para potenciarla. Por ejemplo, aquellas que permiten editar vídeos, retocar fotografías, producir sonidos o escribir.</p>
+</div>
+<div id="c.-experiencias-de-usuario-ux" class="section level4">
+<h4>C. Experiencias de Usuario (UX)</h4>
+<p>Cada Sistema Operativos (SO) tiene su propia identidad que es reflejada en la apariencia y comportamiento de cada uno de los elementos que componen su interfaz. Sin embargo todos ccomparten algunos puntos de vista fundamentales que se manifiestan en el diseño de sus interfaces.</p>
+<p>Los siguientes conceptos son considerados componentes clave del sistema operativo y de las aplicaciones que en él habitan:</p>
+<p><strong>Simplicidad:</strong> La simplicidad visual está directamente relacionada con la usabilidad. Ser simple implica en cierta medida ser mínimo, contar con pocos elementos, pero sobre todo, que aquellos presentes en la interfaz tengan una función bien definida que contribuya a cumplir el objetivo de la app y ayude al usuario.</p>
+<p><strong>Consistencia:</strong> Una app tiene diferentes pantallas que la componen y al mismo tiempo, está dentro de un sistema operativo que pone un determinado aspecto visual e interacción. La consistencia, entonces, se trata de respetar estos conocimientos y costumbres del usuario, no solo en el interior de la aplicación, sino también en relación con el resto del SO. Esto favorece el uso intuitivo de la app ya que el usuario puede prever su comportamiento sin demasiado esfuerzo.</p>
+<p>La relación existente entre apariencia y comportamiento también tiene que ser consistente.</p>
+<p><strong>Navegación intuitiva:</strong> Un aspecto que merece mucha atención en una aplicación es la forma de navegar entre contenidos, de manera que resulte fácil de comprender para el usuario, evitando la sensación de desorientación que puede ocasionar una navegación confusa.</p>
+<p>La navegación intuitiva está también relacionada con la consistencia. Cada sistema operativo propone diferentes elementos para navegar por la app como botones, pestañas y paneles. Hacer uso de ellos hará que el usuario los reconozca a primera vista y, solo con estos componentes, ya sepa cómo ir de una sección a otra.</p>
+</div>
+<div id="d.-interacción-y-formas-de-sostener-el-móvil" class="section level4">
+<h4>D. Interacción y formas de sostener el móvil</h4>
+<p>El diseño de aplicaciones para móviles tiene que tener en cuenta la forma en que los usuarios sujetan los teléfonos. Asimismo, con cuáles dedos interactúan y cómo los usan, tiene incidencia en el diseño de la interfaz y condiciona la ubicación de los elementos interactivos en la pantalla.</p>
+<div class="figure">
+<img src="images/Screen%20Shot%202021-02-05%20at%2012.10.15.png" width="300" alt="" />
+<p class="caption">Fig. 3. Zona del pulgar.</p>
+</div>
+<p>Entonces, las características anatómicas de la mano determinan ciertas zonas de la pantalla que pueden ser alcanzadas con mayor o menor comodidad por este dedo. La «Ley del pulgar», mencionada por algunos autores, se refiere a la superficie de pantalla a la que este dedo tiene acceso sin mayores problemas y nos da pistas para organizar jerárquicamente los elementos en la interfaz.</p>
+</div>
+<div id="e.-incidencia-en-la-orientación-del-terminal" class="section level4">
+<h4>E. Incidencia en la orientación del terminal:</h4>
+<p>Tener en cuenta la orientación del dispositivo al utilizar la aplicación, significa aprovechar lo mejor de cada escenario. Generalmente los teléfonos suelen sujetarse en forma vertical, mientras que en tabletas es habitual cambiar entre el formato vertical y horizontal.</p>
+<p>Es recomendable diseñar para ambas orientaciones, ya que de esta forma no se fuerza al usuario a usar una única versión ofrecida. No obstante, en cada caso habrá que evaluar si la aplicación realmente lo requiere y sacar el máximo provecho del espacio disponible en el modo alargado, reubicando y acomodando los elementos gráficos e interactivos para mejorar la usabilidad.</p>
+<div class="figure">
+<img src="images/Screen%20Shot%202021-02-05%20at%2012.10.55.png" width="450" alt="" />
+<p class="caption">Fig. 4. Las diferentes orientaciones son una oportunidad de repensar la disposición de información que sea más útil en cada caso.</p>
+</div>
+</div>
+<div id="f.-gestos" class="section level4">
+<h4>F. Gestos</h4>
+<p>Tocar es el input principal de los teléfonos móviles modernos. Todo queda en manos del usuario que manipula los elementos directamente en la pantalla. La acción y reacción suceden en el mismo sitio de manera similar a lo que ocurre en el mundo real.</p>
+<p>El uso de los gestos se puede aprovechar en el diseño de aplicaciones, que debe considerarlos como medios para realizar acciones o navegar por los contenidos. Aquí también es importante aprovechar los conocimientos previos del usuario en el manejo de estos dispositivos y ser consistentes con el sistema operativo.</p>
+<div class="figure">
+<img src="images/Screen%20Shot%202021-02-05%20at%2012.12.02.png" width="600" alt="" />
+<p class="caption">Fig. 5. La opción táctil introduce nuevas maneras de interactuar que no existen en las aplicaciones de escritorio, como el “drag and drop”</p>
+</div>
+<p>Cada SO se ha esforzado en imponer sus propias convenciones, pero afortunadamente hay gestos compartidos entre Android, iOS. En la Figura 5 se muestra una lista de los más comunes.</p>
+</div>
+<div id="g.-para-qué-plataforma-desarrollar" class="section level4">
+<h4>G. Para qué plataforma desarrollar:</h4>
+<p>Antes de decidir si diseñar para una o varias plataformas, se debe tener en cuenta todo aquello que afectará el desarrollo, desde los recursos y la complejidad, hasta el tipo de usuario al que se quiere orientar.</p>
+<div id="mayor-alcance-o-exclusividad" class="section level5">
+<h5>Mayor alcance o exclusividad:</h5>
+<p>Diseñar para un sistema operativo popular como Android supone conseguir un alcance y una cantidad de usuarios potenciales mayor. Sin embargo, las diferentes resoluciones de pantalla y versiones del sistema operativo disponibles hacen más compleja la experiencia de diseñar para Android, pagando así en cierta medida el precio de estar disponible para más personas.</p>
+<p>Por otro lado, diseñar para iOS significa concentrarse en un mercado menor y a la vez, más exclusivo. Apple no tiene la misma cantidad de usuarios que los móviles con Android pero aun así tiene la ventaja de ser más consistente en las resoluciones de pantalla y en las versiones del sistema operativo (es más fácil actualizarse). Por lo cual, estos factores no suponen un gran impedimento a la hora de diseñar.</p>
+<p>Entonces, si realmente se quiere diseñar una aplicación «para todo el mundo», está fuera de discusión que por lo menos debería estar disponible para Android y iOS.</p>
+</div>
+<div id="personalidad-de-los-usuarios" class="section level5">
+<h5>Personalidad de los usuarios:</h5>
+<p>Cada sistema operativo tiene usuarios con características geográficas, demográficas, psicográficas y conductuales que los diferencian. Aunque a primera vista parezca algo sin importancia, conocer el tipo de usuario da algunas pistas acerca de quien usará la aplicación y, sobre todo, qué espera de ella.</p>
+<p>En general, puede decirse que los usuarios de iOS dan mayor valor a la experiencia de usuario, se interesan por los detalles y tienen un perfil socioeconómico más alto que los consumidores de otras plataformas. Alguien que usa iOS es amante de la consistencia, de ver cada cosa en su lugar y prefiere no encontrarse con demasiadas sorpresas. Esto se debe en gran parte a que Apple es un sistema más cerrado y restrictivo a la hora de aprobar las aplicaciones, estableciendo reglas de diseño que aseguran cierta calidad y regularidad en sus apps.</p>
+<p>Android por su parte es un sistema operativo de código abierto, libre para los aportes de usuarios y compañías que muchas veces le dan su toque personal. Esto define a un usuario más dispuesto a ideas nuevas, a aplicaciones que rompen paradigmas y que presentan alternativas para diferenciarse, lo cual a veces significa toparse con aplicaciones un poco caóticas, más allá de los últimos esfuerzos de Google por establecer con mayor claridad sus directrices generales de diseño. De la misma forma, al encontrarse en una mayor cantidad de terminales con variedad de precios diferentes, Android tiene un alcance más masivo.</p>
+</div>
+</div>
+</div>
+<div id="iv.-metodologías-ágiles-en-el-desarrollo-de-aplicaciones-para-dispositivos-móviles" class="section level3">
+<h3>IV. METODOLOGÍAS ÁGILES EN EL DESARROLLO DE APLICACIONES PARA DISPOSITIVOS MÓVILES</h3>
+<p>Cuando se adoptan los procesos de Ingeniería de Software el ciclo de vida del desarrollo de un proyecto de aplicaciones para móviles sigue generalmente el ciclo de vida de desarrollo tradicional de un software. El desarrollo de aplicaciones móviles tendrá que satisfacer una serie de requisitos y condiciones especiales.</p>
+<p>Uno de estos particulares es la conectividad, ya que en el diseño se debe tomar en cuenta cómo se manejarán las posibles ausencias de señal, conectividad limitada, intermitencia en la recepción o emisión de datos y los problemas en el cambio de una celda a otra (antena de comunicación base). El desarrollador, posterior a evaluar los requerimientos, deberá decidir la capacidad que tendrá la aplicación de ser usada offline, online o indistintamente de la conectividad de que se disponga. La tendencia es generar aplicaciones que puedan ser usadas en línea y fuera de línea mediante el uso de diversas estrategias como es guardar en cache algunos objetos de datos.</p>
+<p>Una estrategia común para el levantamiento de algunas de las funcionalidades que tendrá la app, es decir los Requerimientos Funcionales, es la revisión de las reseñas que técnicamente son las opiniones escritas y las calificaciones otorgadas por los usuarios a aplicaciones de dominios similares, o a una versión anterior de la misma aplicación que se está desarrollando. Las reseñas están disponibles en las tiendas de aplicaciones y mediante el análisis de estas se pretende descifrar cuáles son las deficiencias descritas por los usuarios y así poder implementar, cuando sea posible, en nuevos desarrollos las soluciones a tales defectos. Para lograr la obtención de estos datos se usan técnicas de minería de texto y de minería de repositorio de softwares (mining software repositories).</p>
+<p>Primero se obtienen los datos, se categorizan y agrupan los textos que presentan similitud para generar, mediante procesos de abstracción, los requerimientos de la aplicación. Este método puede presentar debilidades cuando son pocos los “reviews” o se hace complejo el procesamiento del lenguaje natural.
+Cualquiera sea la aplicación que se esté desarrollando tendrá que tomar en cuenta algunas limitaciones propias de los dispositivos móviles, que fácilmente pueden entenderse como los Requerimientos no Funcionales. La duración de la batería genera una considerable limitación en el consumo de energía que la app pueda generar. Existen estudios y propuestas que indican formas en que se puede reducir este consumo.</p>
+<p>Otra restricción que se debe tomar en consideración es el tema de la seguridad mediante la evaluación de los permisos que puede obtener la aplicación por parte del usuario para acceder al sistema de archivos y a los hardwares del dispositivo, lo que puede conllevar a vulnerabilidades, incluso entre las distintas apps instaladas, ya que existen aplicaciones malignas que van a intentar apoderarse de datos del usuario alojados por el propio SO o en otras aplicaciones. Este tipo de riesgos es mayor en la plataforma de Google por ser más abierta.</p>
+<p>En la tabla I se muestran algunos de los requisitos comúnmente evaluados por los desarrolladores junto con sus descripciones:</p>
+<div class="figure">
+<img src="images/Screen%20Shot%202021-02-05%20at%2012.13.44.png" width="600" alt="" />
+<p class="caption">TABLE I. RELACIÓN DE REQUISITOS PROPIOS DE LAS APLICACIONES PARA DISPOSITIVOS MÓVILES [1]</p>
+</div>
+<p>Se puede decir que el diseño de sistemas de software móvil
+es, en gran media, más complejo que el tradicional, lo que obliga
+a los desarrolladores a considerar otras formas de mejorar su
+producción. Por esto, el uso de metodologías ágiles son una
+excelente alternativa para el desarrollo de aplicaciones para
+dispositivos móviles, gracias a la gran facilidad de adaptación
+que poseen, sin embargo las características de estos desarrollos
+demandan algunos ajustes sobre las actuales metodologías
+ágiles.</p>
+<p>Se nombraran tres de estas Metodologías y se describirá con
+más detalle la Metodología Mobile-D:</p>
+<div id="mobile-d" class="section level4">
+<h4>Mobile-D:</h4>
+<p>Una metodología de desarrollo nueva, especialmente
+diseñada para el desarrollo de aplicaciones móviles y es
+propuesta por Pekka Abrahams y su equipo del VTT (Valtion
+Teknillinen Tutkimuskeskus, en inglés Technical Research
+Centre of Finland) en Finlandia que lideran una corriente muy
+importante de desarrollo ágil muy centrada en las plataformas
+móviles. El método se basa en prácticas ágiles como Extreme
+Programming y crystal; las prácticas asociadas a Mobile-D
+incluyen desarrollo basado en pruebas, la programación en
+parejas, integración continua y refactorización, así como las
+tareas de mejora de procesos de software; Mobile-D debe ser
+utilizado por un equipo de no más de diez desarrolladores,
+trabajando en conjunto para suministrar un producto listo en un
+plazo máximo de diez semanas.</p>
+</div>
+<div id="hmd-hybrid-methodology-design" class="section level4">
+<h4>HMD (Hybrid Methodology Design) :</h4>
+<p>Es otro punto de vista
+muy importante en la actualidad y es una propuesta de Rahimian
+y Ramsin, la cual, se apoya en una combinación del desarrollo
+adaptativo de software (ASD) y el diseño de nuevos productos
+(NPD), parte del ciclo de vida tradicional (análisis, diseño,
+implementación, pruebas y desarrollo) e incluyen además una
+fase de comercialización.</p>
+</div>
+<div id="mobile-development-process-spiral" class="section level4">
+<h4>Mobile Development Process Spiral:</h4>
+<p>Es propuesta de
+metodologías diseñadas específicamente para aplicaciones
+móviles, la cual es un modelo impulsado por la usabilidad y
+toma como base el modelo espiral.</p>
+</div>
+<div id="masams" class="section level4">
+<h4>MASAMs:</h4>
+<p>basado en las metodologías ágiles de desarrollo de
+software, eXtreme Programming y Rational Unified Process.
+Da prioridad a la interface gráfica del usuario (GUI) y se centra
+en la arquitectura. Usa el dominio del conocimiento para el
+reuso de la arquitectora, diseño y los patrones de interface de
+usuario.</p>
+</div>
+<div id="mobile-d-1" class="section level4">
+<h4>Mobile-D:</h4>
+<p>Esta metodología consta de cinco fases: exploración,
+iniciación, producción, estabilización y prueba del sistema.
+Cada una de estas fases tiene un número de etapas, tareas y
+prácticas asociadas.Fig.6</p>
+<div class="figure">
+<img src="images/Screen%20Shot%202021-02-05%20at%2012.16.13.png" width="600" alt="" />
+<p class="caption">Fig. 6. Ciclo de desarrollo Mobile-D [2]</p>
+</div>
+<p>En la primera fase, Explorar, el equipo de desarrollo debe
+generar un plan y establecer las características del proyecto. Esto
+se realiza en tres etapas: establecimiento actores, definición del
+alcance y el establecimiento de proyectos. Las tareas asociadas
+a esta fase incluyen:</p>
+<p>-Establecer los grupos de actores necesarios en la
+planificación y el seguimiento del proyecto de desarrollo de
+software.</p>
+<p>-Definir los alcances y límites del proyecto de desarrollo de
+software.</p>
+<p>-Planificar el proyecto respecto al entorno, el personal y los
+problemas del proceso.</p>
+<p>En la siguiente fase, la de iniciación, los desarrolladores
+preparan e identifican todos los recursos necesarios. Se hace la
+planificación para las siguientes fases y se establece el entorno
+técnico como los recursos físicos, tecnológicos y de
+comunicaciones (incluyendo el entrenamiento del equipo de
+desarrollo). Esta fase se divide en cuatro etapas: la puesta en
+marcha del proyecto, la planificación inicial, el día de prueba y
+día de salida.</p>
+<p>En la fase de producción se repite la programación de tres
+días (planificación, trabajo, liberación) se repite iterativamente
+hasta implementar todas las funcionalidades. Primero se
+planifica la iteración de trabajo en términos de requisitos y tareas
+a realizar. Se preparan las pruebas de la iteración de antemano.
+Las tareas se llevarán a cabo durante el día de trabajo,
+desarrollando e integrando el código con los repositorios
+existentes. Durante el último día se lleva a cabo la integración
+del sistema (en caso de que estuvieran trabajando varios equipos
+de forma independiente) seguida de las pruebas de aceptación.</p>
+<p>En la fase de estabilización, se llevan a cabo las últimas acciones de integración para asegurar que el sistema completo funciona correctamente. Esta será la fase más importante en los proyecto multiequipo con diferentes subsistemas desarrollados por equipos distintos. En esta fase los desarrolladores realizarán tareas similares a las que debían desplegar en la fase de “producción”, aunque en este caso todo el esfuerzo se dirige a la integración del sistema. Adicionalmente se puede considerar en esta fase la producción de la documentación.
+La última fase (prueba y reparación del sistema) tiene como meta la disponibilidad de una versión estable y plenamente funcional del sistema. El producto terminado e integrado se prueba con los requisitos de cliente y se eliminan todos los defectos encontrados.</p>
+</div>
+</div>
+<div id="v.-tipos-de-aplicaciones-según-su-desarrollo" class="section level3">
+<h3>V. TIPOS DE APLICACIONES SEGÚN SU DESARROLLO</h3>
+<p>A nivel de programación existen varias formas de desarrollar una aplicación. Cada una de ellas tiene diferentes características y limitaciones, especialmente desde el punto de vista técnico.</p>
+<p>El marco mostrado en la Fig. 7 permite ver las transiciones entre las aplicaciones móviles que necesitan del navegador y las aplicaciones nativas, usando técnicas de renderizado y virtualización de contenedores (aplicaciones híbridas). Este enfoque es una compensación entre la habitabilidad y el acceso a las características del sistema operativo y el hardware en el dispositivo móvil.</p>
+<div class="figure">
+<img src="images/Screen%20Shot%202021-02-05%20at%2012.32.17.png" width="600" alt="" />
+<p class="caption">Fig. 7. Marco especializado para el desarrollo de aplicaciones Móviles</p>
+</div>
+<div id="a.-aplicaciones-móviles-nativas" class="section level4">
+<h4>A. Aplicaciones Móviles Nativas</h4>
+<p>Una aplicación nativa es un archivo ejecutable (binario), que se descarga y se guarda en el sistema de archivos del dispositivo móvil, estas han sido desarrolladas con el software que ofrece cada sistema operativo a los programadores, llamado genéricamente Software Development Kit o SDK. Así, Android, iOS tienen uno diferente y las aplicaciones nativas se diseñan y programan específicamente para cada plataforma, en el lenguaje utilizado por el SDK.</p>
+<p>Este tipo de apps se descarga e instala desde las tiendas de aplicaciones con ciertas excepciones en el caso de Android.</p>
+<p>Además, no requieren Internet para funcionar, por lo que ofrecen una experiencia de uso más fluida y están realmente integradas al teléfono, lo cual les permite utilizar todas las características de hardware del terminal, como la cámara y los sensores (GPS, acelerómetro, giróscopo, entre otros).
+A nivel de diseño, esta clase de aplicaciones tiene una interfaz basada en las guías de cada sistema operativo, logrando mayor coherencia y consistencia con el resto de aplicaciones y con el propio SO. Esto favorece la usabilidad y beneficia directamente al usuario que encuentra interfaces familiares.</p>
+<div class="figure">
+<img src="images/Screen%20Shot%202021-02-05%20at%2012.33.05.png" width="450" alt="" />
+<p class="caption">Fig. 8. Aplicación Nativa</p>
+</div>
+</div>
+<div id="ventajas" class="section level4">
+<h4>Ventajas:</h4>
+<p>• La aplicación es más rápida.</p>
+<p>• Lo ejecuta directamente el SO y usa las APIs sin intermediario.</p>
+<p>• Obtiene todo el potencial del dispositivo.</p>
+<p>• Accede a los servicios de alto nivel que a su vez le dan acceso a los componentes del dispositivo.</p>
+<p>• La experiencia de usuario es mejor por que usa el GUI del dispositivo.</p>
+<p>• En su mayoría, no necesitan estar conectadas a Internet para su funcionamiento.</p>
+</div>
+<div id="desventajas" class="section level4">
+<h4>Desventajas:</h4>
+<p>• Cuando se desarrolla el código para una plataforma específica, no se puede usar en otra, por eso, hacer y mantener la aplicación en multiplataforma es muy costoso.</p>
+<p>• El desarrollador debe conocer los GUI Toolkit de cada SO para poder crear las pantallas.</p>
+<p>• Requiere de un costo para distribuirla en una tienda, y dependiendo el sistema, para el uso del entorno de desarrollo.</p>
+<p>• Necesitan aprobación para ser publicadas en la plataforma.</p>
+</div>
+<div id="sistemas-operativos-para-dispositivos-móviles" class="section level4">
+<h4>Sistemas operativos para dispositivos móviles:</h4>
+<p>En la Figura 9 podemos ver estadísticas extraídas de la página de NetMarketShare donde se muestra la porción del mercado de los sistemas operativos según el número de terminales vendidos entre Enero del 2019 hasta Febrero de 2020.</p>
+<div class="figure">
+<img src="images/Screen%20Shot%202021-02-05%20at%2012.33.58.png" alt="" />
+<p class="caption">Fig. 9. Comparativa de Plataformas en SO Móvil (Datos extraídos de [8])</p>
+</div>
+<p>Como se puede observar Android ha encabezado el interés de los usuario de móviles con un con un 70,15% junto con IOS que posee el 29,04%, el resto de las plataformas representan solo el 0,82 % del mercado.
+Una característica muy importante que tienen estos dos mercados es que la oferta de aplicaciones para un sistema operativo u otro, se hace de forma centralizada. En la Figura 9 se pueden apreciar las cifras de participación en el mercado de Google Play y la App Store:</p>
+<div class="figure">
+<img src="images/Screen%20Shot%202021-02-05%20at%2012.36.08.png" width="300" alt="" />
+<p class="caption">TABLE II. COMPARATIVA DE LAS PRINCIPALES PLATAFORMAS MÓVILES. (EXTRAÍDO DE [9])</p>
+</div>
+<p>Una característica a resaltar sobre estas tiendas es que al final todos los desarrolladores, sin importar su tamaño terminan, ofreciendo su producto en un mismo “espacio”, siendo de alguna manera todos ellos equiparados, mejorando así la competencia, lo cual generalmente deriva en tener que estos tengan que ofrecer mejores productos y a precios más atractivos.</p>
+<p>En la Tabla II se describen las características de las principales plataformas móviles disponibles en la actualidad.</p>
+</div>
+<div id="b.-aplicaciones-móviles-web" class="section level4">
+<h4>B. Aplicaciones Móviles Web</h4>
+<p>La base de programación de las aplicaciones web también llamadas webapps es el HTML, conjuntamente con JavaScript y CSS, herramientas ya conocidas para los programadores web.
+En este caso no se emplea un SDK, lo cual permite programar de forma independiente al sistema operativo en el cual se usará la aplicación. Por eso, estas aplicaciones pueden ser fácilmente utilizadas en diferentes plataformas sin mayores inconvenientes y sin necesidad de desarrollar un código diferente para cada caso particular.</p>
+<p>Las aplicaciones web no necesitan instalarse, ya que se visualizan usando el navegador del teléfono como un sitio web normal.</p>
+<p>Al tratarse de aplicaciones que funcionan sobre la web, no es necesario que el usuario reciba actualizaciones, ya que siempre va a estar viendo la última versión. Pero, a diferencia de las apps nativas, requieren de una conexión a Internet para funcionar correctamente.</p>
+<p>Adicionalmente, tienen algunas restricciones e inconvenientes en factores importantes como gestión de memoria y no permiten aprovechar al máximo la potencia de los diferentes componentes de hardware del teléfono.
+Las aplicaciones web suelen tener una interfaz más genérica e independiente de la apariencia del sistema operativo, por lo que la experiencia de identificación del usuario con los elementos de navegación e interacción, suele ser menor que en el caso de las nativas.</p>
+<div class="figure">
+<img src="images/Screen%20Shot%202021-02-05%20at%2012.37.06.png" width="450" alt="" />
+<p class="caption">Fig. 10. Aplicación Web con HTML5 con service workers (2018)</p>
+</div>
+<div id="ventajas-1" class="section level5">
+<h5>Ventajas:</h5>
+<p>• Son aplicaciones multiplataforma.</p>
+<p>• Son menos costosas de desarrollar.</p>
+<p>• No requieren de ninguna aprobación para su publicación.</p>
+</div>
+<div id="desventajas-1" class="section level5">
+<h5>Desventajas:</h5>
+<p>• Corre dentro del navegador y se limita a lo que este permite.</p>
+<p>• El motor de renderizado del navegador es importante (Webkit es el más popular).</p>
+<p>• No pueden ser publicadas en plataformas para su distribución.</p>
+<p>• Dependiendo de la versión del navegador: No pueden acceder al micrófono, cámara o vibración No pueden acceder al calendario o los contactos Tienen acceso limitado al Wifi, redes GSM, accelerometer, compass, GPS y almacenamiento.</p>
+</div>
+</div>
+<div id="c.-aplicaciones-móviles-hibridas" class="section level4">
+<h4>C. Aplicaciones Móviles Hibridas</h4>
+<p>Este tipo de aplicaciones es una especie de combinación entre las dos anteriores. La forma de desarrollarlas es parecida a la de una aplicación web usando HTML, CSS y JavaScript, y una vez que la aplicación está terminada, se compila o empaqueta de forma tal, que el resultado final es como si se tratara de una aplicación nativa.</p>
+<p>Esto permite casi con un mismo código obtener diferentes aplicaciones, por ejemplo, para Android y iOS, y distribuirlas en cada una de sus tiendas.
+A diferencia de las aplicaciones web, estas permiten acceder, usando librerías, a las capacidades del teléfono, tal como lo haría una app nativa.</p>
+<p>Las aplicaciones híbridas, también tienen un diseño visual que no se identifica en gran medida con el del sistema operativo. Sin embargo, hay formas de usar controles y botones nativos de cada plataforma para apegarse más a la estética propia de cada una.</p>
+<div class="figure">
+<img src="images/Screen%20Shot%202021-02-05%20at%2012.38.11.png" width="450" alt="" />
+<p class="caption">Fig. 11. Aplicación Híbrida</p>
+</div>
+</div>
+<div id="ventajas-2" class="section level4">
+<h4>Ventajas:</h4>
+<p>• Uso de los recursos del dispositivo y del sistema operativo.</p>
+<p>• El costo de desarrollo puede ser menor que el de una nativa.</p>
+<p>• Son multiplataforma.</p>
+<p>• Permite distribución a través de las tiendas de su respectiva plataforma.</p>
+</div>
+<div id="desventaja" class="section level4">
+<h4>Desventaja:</h4>
+<p>• La documentación puede ser un poco escasa y desordenada.</p>
+</div>
+<div id="los-sdks" class="section level4">
+<h4>Los SDK´s:</h4>
+<p>Las herramientas para desarrolladores juegan un papel muy importante para la creación de las aplicaciones y más en aquellos casos en que van a ser nativas. Hay distintas opciones para elegir los SDK ya que algunos están destinados aplicaciones nativas mientras otros están destinados a aplicaciones híbridas. Se debe tener presente las habilidades del desorrallador y las restricciones que puede causar el propio hardware del dispositivo.</p>
+<div class="figure">
+<img src="images/Screen%20Shot%202021-02-05%20at%2012.39.03.png" width="450" alt="" />
+<p class="caption">TABLE III. PRINCIPALES JDK</p>
+</div>
+</div>
+</div>
+<div id="vi.-frameworks" class="section level3">
+<h3>VI. FRAMEWORKS</h3>
+<p>Los frameworks de desarrollo especializados permiten llevar el flujo de trabajo de desarrollo para las aplicaciones móviles, y pueden aumentar su disponibilidad. Bajo el uso de Frameworks especializados, la integración de aplicaciones y la virtualización se pueden hacer de la manera más sencilla.</p>
+<p>Los frameworks de desarrollo especializados son los siguientes: PhoneGap / Cordova, Accelerator Titanium, Intel XDK y Trigger.io. Admiten el flujo de trabajo de desarrollo para las aplicaciones móviles. A continuación se incluye una tabla comparativa de las herramientas y frameworks más importantes para el desarrollo de aplicaciones móviles (Tab. IV). La tabla proporciona una comparación de las herramientas y frameworks más importantes para el desarrollo de aplicaciones móviles.</p>
+<div class="figure">
+<img src="images/Screen%20Shot%202021-02-05%20at%2012.39.42.png" width="500" alt="" />
+<p class="caption">TABLE IV. TABLA COMPARATIVA DE LAS MÁS IMPORTANTES HERRAMIENTAS Y FRAMEWORKS PARA EL DESARROLLO DE APLICACIONES MÓVILES</p>
+</div>
+</div>
+<div id="vii.-perspectivas" class="section level3">
+<h3>VII. PERSPECTIVAS:</h3>
+<p>La tendencia es a que se siga incrementado el uso de dispositivos móviles y esto claramente traerá la necesidad de nuevos desarrollos de aplicaciones. No solo es la tendencia lo que permite tener esta perspectiva ya que también vienen cambios en las plataformas de telecomunicaciones como lo es la llegada del 5G que ampliará exponencialmente las velocidades y cantidad de datos a intercambiar.</p>
+<p>Igualmente hay esfuerzos considerables por parte de las empresas creadoras de los sistemas operativos para que los SDK´s permitan una mayor flexibilidad en el desarrollo de aplicaciones que puedan ser hechas para un determinado dispositivo como una computadora de escritorio y sin necesidad de cambiar radicalmente la estructura de diseño o el código de desarrollo, poder adaptarla a la versión móvil de dicho sistema operativo tal es el caso de Apple con el lanzamiento de la versión iOS 13.</p>
+<p>Una característica particular que viene surgiendo es que hay dispositivos móviles que cuentan con hardware que no se ha usado en un cien por ciento ya que no están aún desarrolladas las apps que liberen todo ese potencial. Este es el caso de dispositivos de última generación que cuetan con chips muy potentes tanto como de procesamiento central como en la unidad gráfica de procesamiento los cuales al combinarse con distintos sensores abren nuevas puertas para desarrollos de innovadoras apps como lo es por ejemplo en el área de la realidad aumentada.</p>
+<p>Los dispositivos en estudio también conocemos que sirven para el levantamiento de datos del usuario los cuales se usan para generar “contextos de usos” particulares mediante la aplicación de algoritmos de aprendizaje automático. Teniendo mayor poder de cómputo se incrementará la posibilidad de generar mejores contextos.</p>
+<p>Es claro que tecnologías como el “near-field communication” (comunicación de campo cercano) incrementarán el uso de los dispositivos como billeteras electrónicas sólo por enunciar algunas de las más claras direcciones en que serán usados los dispositivos móviles.</p>
+</div>
+<div id="viii.-concluciones" class="section level3">
+<h3>VIII. CONCLUCIONES</h3>
+<p>En las secciones anteriores se han discutido los elementos de diseño importes a tomar en cuenta a la hora de desarrollar una aplicación Móvil para alguna plataforma. Se muestran las metodologías ágiles como una excelente alternativa para guiar proyectos de desarrollo de software de tamaño reducido, como es el caso de las aplicaciones para dispositivos móviles, gracias a la gran facilidad de adaptación que poseen; pero estas necesitan ser adaptadas a las características especiales de estos dispositivos. Se realiza una comparativa de las características importantes de los diferentes Sistemas operativos de los dispositivos móviles.</p>
+<p>Se han tenido en cuenta las características distintivas más importantes para las aplicaciones nativas, las aplicaciones web y las híbridas.</p>
+<p>Se consideran las más importantes herramientas y frameworks para el desarrollo de aplicaciones móviles y se presentan las potencialidades próximas a desarrollar con la llegada de nuevas tecnologías o con un mayor uso de las ya existentes.</p>
+</div>
+<div id="ix.-referencias" class="section level3">
+<h3>IX. REFERENCIAS</h3>
+<p>[1] Y. Amaya, “Metodologías ágiles y desarrollo de aplicaciones móviles” Universidad Pedagógica y Tecnológica de Colombia. Revista de Tecnología Journal Technology, vol. 12, Número 2, pp 111-124</p>
+<p>[2] Mobile-D homepage, <a href="http://agile.vtt.fi/mobiled.html" class="uri">http://agile.vtt.fi/mobiled.html</a></p>
+<p>[3] J. Cuello, J. Vittone, “Diseñando apps para móviles” Junio 2013. ISBN: 978-84-616-5070-5 . www.appdesignbook.com</p>
+<p>[4] J. Puras, A. Fumero, “Metodología de desarrollo ágil para sistemas móviles Introducción al desarrollo con Android y el iPhone”. Universidad Politécnica de Madrid, Junio 2016. <a href="https://www.researchgate.net/publication/267795011" class="uri">https://www.researchgate.net/publication/267795011</a></p>
+<p>[5] J. Wiliams., “Mobile-D”. pp 15-26. <a href="https://www.academia.edu/23746235/Mobile-D" class="uri">https://www.academia.edu/23746235/Mobile-D</a></p>
+<p>[6] A. Luntovskyy, “Advanced software-technological approaches for mobile apps development”, 2018 14th International Conference on Advanced Trends in Radioelecrtronics, Telecommunications and Computer Engineering (TCSET), Slavske, 2018, pp. 113-118.</p>
+<p>[7] De Idea a App, <a href="https://deideaaapp.org/tipos-de-aplicaciones-moviles-y-sus-caracteristicas/" class="uri">https://deideaaapp.org/tipos-de-aplicaciones-moviles-y-sus-caracteristicas/</a></p>
+<p>[8] Market Share Statistics for Internet Technologies <a href="https://netmarketshare.com/" class="uri">https://netmarketshare.com/</a></p>
+<p>[9] Universitat Politècnica de València.http://www.androidcurso.com/index.php/recursos/31-unidad-1-vision-general-y-entorno-de-desarrollo/98-comparativa-con-otras-plataformas</p>
+<p>[10] Worldometer <a href="https://www.worldometers.info" class="uri">https://www.worldometers.info</a>
+[11] Comisión nacional de telecomunicaciones de la república bolivariana de venezuela (Conatel) <a href="http://www.conatel.gob.ve/estadisticas-anuales-y-trimestrales/" class="uri">http://www.conatel.gob.ve/estadisticas-anuales-y-trimestrales/</a></p>
+<p>[12] Nagapan Meiyeppan, Shihab Emad, “Future Trends in Software Engineering Researh for Mobile Apps”. 2016 IEEE 23rd International Conference on Software Analysis, Evolution, and Reengineering.</p>
+<p>[13] Jabangwe Ronald, Edison Henry y Nguyen Anh, “Software engineering process models for mobile app development: A systematic literature review”. Journal of Systems and Software Volume 145, November 2018, Pages 98-11.</p>
+<p>[14] Islam Nayeem, Want Roy, “Smartphones: Past, Present, and Future”. IEE Pervasive Computing; www. computer.org/csdl/magazine/pc/2014.</p>
+<p>[15] Jeong Yang-Jae, Lee Ji-Hyeon, Shin Gyu-Sang, Development Process of Mobile Applicattio SW Based on Agile Methodology. ICACT 2008, Feb 17-20.</p>
+</div>
