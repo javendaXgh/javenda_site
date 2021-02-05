@@ -24,7 +24,6 @@ image:
 projects: []
 ---
 
->El presente documento fue escrito por Rosana M. Vargas Boset y José Miguel Avendaño para la materia Ingeniería de Software del Postrgrado de Ciencias de la Computación de la Facultad de Ciencias de la Universidad Central de Venezuela a cargo de la Profa. Dra. Vanessa Leguizano en mayo de 2020.
 
 ### I. INTRODUCIÓN
 En el mundo actual es más común tener un teléfono inteligente o tablet a la mano que una laptop o una computadora de escritorio, razón por la cual recurrimos a realizar diversas tareas en estos dispositivos, ya que resulta más rápido y sencillo el uso de los mismos. Es a estos dispositivos a los cuales denominaremos a lo largo de este artículo como “dispositivos móviles”.
@@ -52,6 +51,8 @@ Se desarrollan en este documento los elementos importantes a tomar en cuenta par
 
 
 Adicional a esta Introducción, el artículo se compone de siete secciones más. En la segunda sección se hace una aproximación a lo que representa el dispositivo móvil de mayor uso que es el teléfono celular inteligente. En la tercera se exponen las generalidades para el desarrollo de Aplicaciones Móviles, mientras que en la cuarta se abordan Metodologías Agiles para el desarrollo de Aplicaciones Móviles. Es en la quinta que se describen los tipos de Aplicaciones según su desarrollo. La sexta sección se hace referencia a algunos frameworks disponibles para el desarrollo y los enfoques tecnológicos de software. En la sección séptima se realiza una proyección a lo que puede ser el futuro de las aplicaciones móviles y en la sección octava se presentan las conclusiones.
+
+>El presente documento fue escrito por Rosana M. Vargas Boset y José Miguel Avendaño para la materia Ingeniería de Software del Postrgrado de Ciencias de la Computación de la Facultad de Ciencias de la Universidad Central de Venezuela a cargo de la Profa. Dra. Vanessa Leguizano en mayo de 2020.
 
 
 ### II. TELÉFONOS INTELIGENTES
