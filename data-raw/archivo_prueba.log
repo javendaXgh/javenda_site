@@ -1,47 +1,6 @@
-Error in git2r::config(user.name = "javendaXgh", user.email = "javenda@gmail.com") : 
-  Unable to locate local repository
-Ejecuci'on interrumpida
-Error in git2r::config(user.name = "javendaXgh", user.email = "javenda@gmail.com") : 
-  Unable to locate local repository
-Ejecuci'on interrumpida
-Error in git2r::config(user.name = "javendaXgh", user.email = "javenda@gmail.com") : 
-  Unable to locate local repository
-Ejecuci'on interrumpida
-Error in git2r::config(user.name = "javendaXgh", user.email = "javenda@gmail.com") : 
-  Unable to locate local repository
-Ejecuci'on interrumpida
-Error in git2r::config(user.name = "javendaXgh", user.email = "javenda@gmail.com") : 
-  Unable to locate local repository
-Ejecuci'on interrumpida
-[1] "cd /Users/josemiguelavendanoinfante/R/sites/javenda_site/ & git status"
-On branch main
-Your branch is up to date with 'origin/main'.
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-	data-raw/archivo_prueba.log
-	data-raw/data_X2021.02.07.17.08.01.Rda
-	data-raw/data_X2021.02.07.17.09.00.Rda
-	data-raw/data_X2021.02.07.17.10.00.Rda
-	data-raw/data_X2021.02.07.17.16.00.Rda
-	data-raw/data_X2021.02.07.17.17.01.Rda
-	data-raw/data_X2021.02.07.17.20.01.Rda
-	data-raw/data_X2021.02.07.17.21.00.Rda
-	data-raw/data_X2021.02.07.17.22.01.Rda
-	data-raw/data_X2021.02.07.17.23.00.Rda
-	data-raw/data_X2021.02.07.17.24.00.Rda
-	data-raw/data_X2021.02.07.17.25.01.Rda
-	data-raw/data_X2021.02.07.17.26.00.Rda
-	data-raw/data_X2021.02.07.17.27.01.Rda
-	data-raw/data_X2021.02.07.17.28.00.Rda
-	data-raw/data_X2021.02.07.17.29.01.Rda
-	data-raw/data_X2021.02.07.17.30.00.Rda
-	data-raw/data_X2021.02.07.17.31.01.Rda
-	data-raw/data_X2021.02.07.17.32.00.Rda
-	data-raw/data_X2021.02.07.17.33.01.Rda
-	data-raw/data_X2021.02.07.17.34.01.Rda
-	data-raw/data_X2021.02.07.17.35.00.Rda
-	data-raw/data_X2021.02.07.17.35.43.Rda
-
-nothing added to commit but untracked files present (use "git add" to track)
-[1] "cd /Users/josemiguelavendanoinfante/R/sites/javenda_site/ & git add --all"
+fatal: not a git repository (or any of the parent directories): .git
+pfatal: not a git repository (or any of the parent directories): .git
+pInitialized empty Git repository in /Users/josemiguelavendanoinfante/.git/
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+p
