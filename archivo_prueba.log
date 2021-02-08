@@ -1,0 +1,677 @@
+warning: could not open directory 'Desktop/': Operation not permitted
+warning: could not open directory '.Trash/': Operation not permitted
+warning: could not open directory 'Documents/': Operation not permitted
+warning: could not open directory 'Downloads/': Operation not permitted
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+	.CFUserTextEncoding
+	.RData
+	.RapidMiner/
+	.Renviron
+	.Renviron_backup
+	.Rhistory
+	.Rprofile
+	.Xauthority
+	.anaconda/
+	.anydesk/
+	.atom/
+	.bash_history
+	.bash_profile
+	.cache/
+	.conda/
+	.condarc
+	.config/
+	.cups/
+	.docker/
+	.dvdcss/
+	.emacs.d/
+	.gitconfig
+	.gitflow_export
+	.gitignore_global
+	.hgignore_global
+	.ipython/
+	.iterm2_shell_integration.bash
+	.iterm2_shell_integration.zsh
+	.jupyter/
+	.kite/
+	.local/
+	.matplotlib/
+	.octave_hist
+	.oracle_jre_usage/
+	.pylint.d/
+	.python_history
+	.r/
+	.rtweet_token.rds
+	.spyder-py3/
+	.ssh/
+	.stCommitMsg
+	.vim/
+	.viminfo
+	.vscode/
+	.zprofile
+	.zsh_history
+	.zsh_sessions/
+	.zshrc
+	Applications/
+	Bar
+	Calibre Library/
+	Dropbox/
+	Google Drive/
+	Library/
+	Movies/
+	Music/
+	Pictures/
+	Public/
+	R/.RData
+	R/.Rapp.history
+	R/.Rhistory
+	R/.Rhistory[Conflict]
+	R/.gitignore
+	R/.gitignore (1)
+	R/.httr-oauth (1)
+	R/00_archivados/
+	R/02_info_levantada/
+	R/05_markdown/
+	R/BI_proyecto/
+	R/EEA2019/
+	"R/Icon\r"
+	R/JAVA_linea.txt
+	R/Leaflet_demos/
+	R/NLP/
+	R/Proyecto Mineria de datos/
+	R/TEG/
+	R/Twiiter2/
+	R/archivos en R/
+	R/bases_datos_pruebas/
+	R/bots_madiba/
+	R/calibre_biblioteca.R
+	R/clustering&tel/
+	R/comunity/
+	R/content.xml
+	R/cursos_tutoriales/
+	R/cv_JMAI/
+	R/datos/
+	R/disk.frame-tutorial-rladies-2020/
+	R/github.rds
+	R/github.txt
+	R/github_clones/
+	R/google_mobility_report_ggplot_graficos/
+	R/graficos/
+	R/machine_learning_practicas/
+	R/marketing/
+	R/marketingjavendaXtwdf_javendaXtw_2020-07-16 01:32:29.rds
+	R/oscar/
+	R/paquetes_sheats_otros/
+	R/por_revisar.R
+	R/portafolio_ideas/
+	R/raul_timeline.rds
+	R/rjava_coreNLP_prueba.R
+	R/sche1/
+	R/set_up_inicial.R
+	R/shiny-serverDB
+	R/shiny/
+	R/sites/featured.jpg
+	R/sites/javendaXgh.github.io/
+	R/sites/javenda_site/LICENSE.md
+	R/sites/javenda_site/README.md
+	R/sites/javenda_site/archivo_prueba.log
+	R/sites/javenda_site/assets/
+	R/sites/javenda_site/config.toml
+	R/sites/javenda_site/config.yaml
+	R/sites/javenda_site/config/
+	R/sites/javenda_site/content/
+	R/sites/javenda_site/data-raw/
+	R/sites/javenda_site/data/
+	R/sites/javenda_site/layouts/
+	R/sites/javenda_site/netlify.toml
+	R/sites/javenda_site/resources/
+	R/sites/javenda_site/static/
+	R/sites/javenda_site/suma.rds
+	R/sites/javenda_site/themes/
+	R/sites/javenda_site/valor.rds
+	R/sites/modelo_starter-academic/
+	R/sites/prueb/
+	R/sites/prueba_auto_github/
+	R/sites/pruebas_carias/
+	R/sites/scheduled-commit-action/
+	R/sites/starter_blog/
+	R/spanish-ancora-ud-2.4-190531.udpipe
+	R/teaching/
+	R/temas_rStudio/
+	R/tidymodels/
+	R/varios/
+	R/visualizaciones_spotify/
+	Relocated Items/
+	_-OZ1yQTbtf5E.webm
+	agent
+	apps_jm/
+	backup software/
+	bin/
+	dumps/
+	hostfile
+	id_rsa.pub
+	id_rsa.pub.pub
+	kinect/
+	knime-workspace/
+	maximum-awesome/
+	my_schedule.cron
+	node/
+	otro_prueba
+	pretrained_models/
+	pruebas/
+	py_codes/
+	ssh.zip
+	wekafiles/
+
+nothing added to commit but untracked files present
+warning: could not open directory 'Desktop/': Operation not permitted
+warning: could not open directory '.Trash/': Operation not permitted
+warning: could not open directory 'Documents/': Operation not permitted
+warning: could not open directory 'Downloads/': Operation not permitted
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.CFUserTextEncoding
+	.RData
+	.RapidMiner/
+	.Renviron
+	.Renviron_backup
+	.Rhistory
+	.Rprofile
+	.Xauthority
+	.anaconda/
+	.anydesk/
+	.atom/
+	.bash_history
+	.bash_profile
+	.cache/
+	.conda/
+	.condarc
+	.config/
+	.cups/
+	.docker/
+	.dvdcss/
+	.emacs.d/
+	.gitconfig
+	.gitflow_export
+	.gitignore_global
+	.hgignore_global
+	.ipython/
+	.iterm2_shell_integration.bash
+	.iterm2_shell_integration.zsh
+	.jupyter/
+	.kite/
+	.local/
+	.matplotlib/
+	.octave_hist
+	.oracle_jre_usage/
+	.pylint.d/
+	.python_history
+	.r/
+	.rtweet_token.rds
+	.spyder-py3/
+	.ssh/
+	.stCommitMsg
+	.vim/
+	.viminfo
+	.vscode/
+	.zprofile
+	.zsh_history
+	.zsh_sessions/
+	.zshrc
+	Applications/
+	Bar
+	Calibre Library/
+	Dropbox/
+	Google Drive/
+	Library/
+	Movies/
+	Music/
+	Pictures/
+	Public/
+	R/.RData
+	R/.Rapp.history
+	R/.Rhistory
+	R/.Rhistory[Conflict]
+	R/.gitignore
+	R/.gitignore (1)
+	R/.httr-oauth (1)
+	R/00_archivados/
+	R/02_info_levantada/
+	R/05_markdown/
+	R/BI_proyecto/
+	R/EEA2019/
+	"R/Icon\r"
+	R/JAVA_linea.txt
+	R/Leaflet_demos/
+	R/NLP/
+	R/Proyecto Mineria de datos/
+	R/TEG/
+	R/Twiiter2/
+	R/archivos en R/
+	R/bases_datos_pruebas/
+	R/bots_madiba/
+	R/calibre_biblioteca.R
+	R/clustering&tel/
+	R/comunity/
+	R/content.xml
+	R/cursos_tutoriales/
+	R/cv_JMAI/
+	R/datos/
+	R/disk.frame-tutorial-rladies-2020/
+	R/github.rds
+	R/github.txt
+	R/github_clones/
+	R/google_mobility_report_ggplot_graficos/
+	R/graficos/
+	R/machine_learning_practicas/
+	R/marketing/
+	R/marketingjavendaXtwdf_javendaXtw_2020-07-16 01:32:29.rds
+	R/oscar/
+	R/paquetes_sheats_otros/
+	R/por_revisar.R
+	R/portafolio_ideas/
+	R/raul_timeline.rds
+	R/rjava_coreNLP_prueba.R
+	R/sche1/
+	R/set_up_inicial.R
+	R/shiny-serverDB
+	R/shiny/
+	R/sites/featured.jpg
+	R/sites/javendaXgh.github.io/
+	R/sites/javenda_site/LICENSE.md
+	R/sites/javenda_site/README.md
+	R/sites/javenda_site/archivo_prueba.log
+	R/sites/javenda_site/assets/
+	R/sites/javenda_site/config.toml
+	R/sites/javenda_site/config.yaml
+	R/sites/javenda_site/config/
+	R/sites/javenda_site/content/
+	R/sites/javenda_site/data-raw/
+	R/sites/javenda_site/data/
+	R/sites/javenda_site/layouts/
+	R/sites/javenda_site/netlify.toml
+	R/sites/javenda_site/resources/
+	R/sites/javenda_site/static/
+	R/sites/javenda_site/suma.rds
+	R/sites/javenda_site/themes/
+	R/sites/javenda_site/valor.rds
+	R/sites/modelo_starter-academic/
+	R/sites/prueb/
+	R/sites/prueba_auto_github/
+	R/sites/pruebas_carias/
+	R/sites/scheduled-commit-action/
+	R/sites/starter_blog/
+	R/spanish-ancora-ud-2.4-190531.udpipe
+	R/teaching/
+	R/temas_rStudio/
+	R/tidymodels/
+	R/varios/
+	R/visualizaciones_spotify/
+	Relocated Items/
+	_-OZ1yQTbtf5E.webm
+	agent
+	apps_jm/
+	backup software/
+	bin/
+	dumps/
+	hostfile
+	id_rsa.pub
+	id_rsa.pub.pub
+	kinect/
+	knime-workspace/
+	maximum-awesome/
+	my_schedule.cron
+	node/
+	otro_prueba
+	pretrained_models/
+	pruebas/
+	py_codes/
+	ssh.zip
+	wekafiles/
+
+nothing added to commit but untracked files present (use "git add" to track)
+fatal: could not read Username for 'https://github.com': Device not configured
+pwarning: could not open directory 'Desktop/': Operation not permitted
+warning: could not open directory '.Trash/': Operation not permitted
+warning: could not open directory 'Documents/': Operation not permitted
+warning: could not open directory 'Downloads/': Operation not permitted
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+	.CFUserTextEncoding
+	.RData
+	.RapidMiner/
+	.Renviron
+	.Renviron_backup
+	.Rhistory
+	.Rprofile
+	.Xauthority
+	.anaconda/
+	.anydesk/
+	.atom/
+	.bash_history
+	.bash_profile
+	.cache/
+	.conda/
+	.condarc
+	.config/
+	.cups/
+	.docker/
+	.dvdcss/
+	.emacs.d/
+	.gitconfig
+	.gitflow_export
+	.gitignore_global
+	.hgignore_global
+	.ipython/
+	.iterm2_shell_integration.bash
+	.iterm2_shell_integration.zsh
+	.jupyter/
+	.kite/
+	.local/
+	.matplotlib/
+	.octave_hist
+	.oracle_jre_usage/
+	.pylint.d/
+	.python_history
+	.r/
+	.rtweet_token.rds
+	.spyder-py3/
+	.ssh/
+	.stCommitMsg
+	.vim/
+	.viminfo
+	.vscode/
+	.zprofile
+	.zsh_history
+	.zsh_sessions/
+	.zshrc
+	Applications/
+	Bar
+	Calibre Library/
+	Dropbox/
+	Google Drive/
+	Library/
+	Movies/
+	Music/
+	Pictures/
+	Public/
+	R/.RData
+	R/.Rapp.history
+	R/.Rhistory
+	R/.Rhistory[Conflict]
+	R/.gitignore
+	R/.gitignore (1)
+	R/.httr-oauth (1)
+	R/00_archivados/
+	R/02_info_levantada/
+	R/05_markdown/
+	R/BI_proyecto/
+	R/EEA2019/
+	"R/Icon\r"
+	R/JAVA_linea.txt
+	R/Leaflet_demos/
+	R/NLP/
+	R/Proyecto Mineria de datos/
+	R/TEG/
+	R/Twiiter2/
+	R/archivos en R/
+	R/bases_datos_pruebas/
+	R/bots_madiba/
+	R/calibre_biblioteca.R
+	R/clustering&tel/
+	R/comunity/
+	R/content.xml
+	R/cursos_tutoriales/
+	R/cv_JMAI/
+	R/datos/
+	R/disk.frame-tutorial-rladies-2020/
+	R/github.rds
+	R/github.txt
+	R/github_clones/
+	R/google_mobility_report_ggplot_graficos/
+	R/graficos/
+	R/machine_learning_practicas/
+	R/marketing/
+	R/marketingjavendaXtwdf_javendaXtw_2020-07-16 01:32:29.rds
+	R/oscar/
+	R/paquetes_sheats_otros/
+	R/por_revisar.R
+	R/portafolio_ideas/
+	R/raul_timeline.rds
+	R/rjava_coreNLP_prueba.R
+	R/sche1/
+	R/set_up_inicial.R
+	R/shiny-serverDB
+	R/shiny/
+	R/sites/featured.jpg
+	R/sites/javendaXgh.github.io/
+	R/sites/javenda_site/LICENSE.md
+	R/sites/javenda_site/README.md
+	R/sites/javenda_site/archivo_prueba.log
+	R/sites/javenda_site/assets/
+	R/sites/javenda_site/config.toml
+	R/sites/javenda_site/config.yaml
+	R/sites/javenda_site/config/
+	R/sites/javenda_site/content/
+	R/sites/javenda_site/data-raw/
+	R/sites/javenda_site/data/
+	R/sites/javenda_site/layouts/
+	R/sites/javenda_site/netlify.toml
+	R/sites/javenda_site/resources/
+	R/sites/javenda_site/static/
+	R/sites/javenda_site/suma.rds
+	R/sites/javenda_site/themes/
+	R/sites/javenda_site/valor.rds
+	R/sites/modelo_starter-academic/
+	R/sites/prueb/
+	R/sites/prueba_auto_github/
+	R/sites/pruebas_carias/
+	R/sites/scheduled-commit-action/
+	R/sites/starter_blog/
+	R/spanish-ancora-ud-2.4-190531.udpipe
+	R/teaching/
+	R/temas_rStudio/
+	R/tidymodels/
+	R/varios/
+	R/visualizaciones_spotify/
+	Relocated Items/
+	_-OZ1yQTbtf5E.webm
+	agent
+	apps_jm/
+	backup software/
+	bin/
+	dumps/
+	hostfile
+	id_rsa.pub
+	id_rsa.pub.pub
+	kinect/
+	knime-workspace/
+	maximum-awesome/
+	my_schedule.cron
+	node/
+	otro_prueba
+	pretrained_models/
+	pruebas/
+	py_codes/
+	ssh.zip
+	wekafiles/
+
+nothing added to commit but untracked files present
+warning: could not open directory 'Desktop/': Operation not permitted
+warning: could not open directory '.Trash/': Operation not permitted
+warning: could not open directory 'Documents/': Operation not permitted
+warning: could not open directory 'Downloads/': Operation not permitted
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.CFUserTextEncoding
+	.RData
+	.RapidMiner/
+	.Renviron
+	.Renviron_backup
+	.Rhistory
+	.Rprofile
+	.Xauthority
+	.anaconda/
+	.anydesk/
+	.atom/
+	.bash_history
+	.bash_profile
+	.cache/
+	.conda/
+	.condarc
+	.config/
+	.cups/
+	.docker/
+	.dvdcss/
+	.emacs.d/
+	.gitconfig
+	.gitflow_export
+	.gitignore_global
+	.hgignore_global
+	.ipython/
+	.iterm2_shell_integration.bash
+	.iterm2_shell_integration.zsh
+	.jupyter/
+	.kite/
+	.local/
+	.matplotlib/
+	.octave_hist
+	.oracle_jre_usage/
+	.pylint.d/
+	.python_history
+	.r/
+	.rtweet_token.rds
+	.spyder-py3/
+	.ssh/
+	.stCommitMsg
+	.vim/
+	.viminfo
+	.vscode/
+	.zprofile
+	.zsh_history
+	.zsh_sessions/
+	.zshrc
+	Applications/
+	Bar
+	Calibre Library/
+	Dropbox/
+	Google Drive/
+	Library/
+	Movies/
+	Music/
+	Pictures/
+	Public/
+	R/.RData
+	R/.Rapp.history
+	R/.Rhistory
+	R/.Rhistory[Conflict]
+	R/.gitignore
+	R/.gitignore (1)
+	R/.httr-oauth (1)
+	R/00_archivados/
+	R/02_info_levantada/
+	R/05_markdown/
+	R/BI_proyecto/
+	R/EEA2019/
+	"R/Icon\r"
+	R/JAVA_linea.txt
+	R/Leaflet_demos/
+	R/NLP/
+	R/Proyecto Mineria de datos/
+	R/TEG/
+	R/Twiiter2/
+	R/archivos en R/
+	R/bases_datos_pruebas/
+	R/bots_madiba/
+	R/calibre_biblioteca.R
+	R/clustering&tel/
+	R/comunity/
+	R/content.xml
+	R/cursos_tutoriales/
+	R/cv_JMAI/
+	R/datos/
+	R/disk.frame-tutorial-rladies-2020/
+	R/github.rds
+	R/github.txt
+	R/github_clones/
+	R/google_mobility_report_ggplot_graficos/
+	R/graficos/
+	R/machine_learning_practicas/
+	R/marketing/
+	R/marketingjavendaXtwdf_javendaXtw_2020-07-16 01:32:29.rds
+	R/oscar/
+	R/paquetes_sheats_otros/
+	R/por_revisar.R
+	R/portafolio_ideas/
+	R/raul_timeline.rds
+	R/rjava_coreNLP_prueba.R
+	R/sche1/
+	R/set_up_inicial.R
+	R/shiny-serverDB
+	R/shiny/
+	R/sites/featured.jpg
+	R/sites/javendaXgh.github.io/
+	R/sites/javenda_site/LICENSE.md
+	R/sites/javenda_site/README.md
+	R/sites/javenda_site/archivo_prueba.log
+	R/sites/javenda_site/assets/
+	R/sites/javenda_site/config.toml
+	R/sites/javenda_site/config.yaml
+	R/sites/javenda_site/config/
+	R/sites/javenda_site/content/
+	R/sites/javenda_site/data-raw/
+	R/sites/javenda_site/data/
+	R/sites/javenda_site/layouts/
+	R/sites/javenda_site/netlify.toml
+	R/sites/javenda_site/resources/
+	R/sites/javenda_site/static/
+	R/sites/javenda_site/suma.rds
+	R/sites/javenda_site/themes/
+	R/sites/javenda_site/valor.rds
+	R/sites/modelo_starter-academic/
+	R/sites/prueb/
+	R/sites/prueba_auto_github/
+	R/sites/pruebas_carias/
+	R/sites/scheduled-commit-action/
+	R/sites/starter_blog/
+	R/spanish-ancora-ud-2.4-190531.udpipe
+	R/teaching/
+	R/temas_rStudio/
+	R/tidymodels/
+	R/varios/
+	R/visualizaciones_spotify/
+	Relocated Items/
+	_-OZ1yQTbtf5E.webm
+	agent
+	apps_jm/
+	backup software/
+	bin/
+	dumps/
+	hostfile
+	id_rsa.pub
+	id_rsa.pub.pub
+	kinect/
+	knime-workspace/
+	maximum-awesome/
+	my_schedule.cron
+	node/
+	otro_prueba
+	pretrained_models/
+	pruebas/
+	py_codes/
+	ssh.zip
+	wekafiles/
+
+nothing added to commit but untracked files present (use "git add" to track)
+fatal: could not read Username for 'https://github.com': Device not configured
+p
