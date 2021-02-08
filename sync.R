@@ -16,5 +16,6 @@ system('git commit -am "x_prueba"')
 #system('git status')
 
 #system('git branch -a')
+system('git pull https://github.com/javendaXgh/javenda_site master')
 system('git push https://github.com/javendaXgh/javenda_site master')#main master remotes/origin/HEAD
 #system(' git branch -a')
