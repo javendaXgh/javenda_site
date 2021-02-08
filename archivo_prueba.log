@@ -1,0 +1,95 @@
+fatal: remote origin already exists.
+warning: could not open directory 'Desktop/': Operation not permitted
+warning: could not open directory '.Trash/': Operation not permitted
+warning: could not open directory 'Documents/': Operation not permitted
+warning: could not open directory 'Downloads/': Operation not permitted
+On branch master
+
+Initial commit
+
+Untracked files:
+	.CFUserTextEncoding
+	.RData
+	.RapidMiner/
+	.Renviron
+	.Renviron_backup
+	.Rhistory
+	.Rprofile
+	.Xauthority
+	.anaconda/
+	.anydesk/
+	.atom/
+	.bash_history
+	.bash_profile
+	.cache/
+	.conda/
+	.condarc
+	.config/
+	.cups/
+	.docker/
+	.dvdcss/
+	.emacs.d/
+	.gitconfig
+	.gitflow_export
+	.gitignore_global
+	.hgignore_global
+	.ipython/
+	.iterm2_shell_integration.bash
+	.iterm2_shell_integration.zsh
+	.jupyter/
+	.kite/
+	.local/
+	.matplotlib/
+	.octave_hist
+	.oracle_jre_usage/
+	.pylint.d/
+	.python_history
+	.r/
+	.rtweet_token.rds
+	.spyder-py3/
+	.ssh/
+	.stCommitMsg
+	.vim/
+	.viminfo
+	.vscode/
+	.zprofile
+	.zsh_history
+	.zsh_sessions/
+	.zshrc
+	Applications/
+	Bar
+	Calibre Library/
+	Dropbox/
+	Google Drive/
+	Library/
+	Movies/
+	Music/
+	Pictures/
+	Public/
+	R/
+	Relocated Items/
+	_-OZ1yQTbtf5E.webm
+	agent
+	apps_jm/
+	backup software/
+	bin/
+	dumps/
+	hostfile
+	id_rsa.pub
+	id_rsa.pub.pub
+	kinect/
+	knime-workspace/
+	maximum-awesome/
+	my_schedule.cron
+	node/
+	otro_prueba
+	pretrained_models/
+	pruebas/
+	py_codes/
+	ssh.zip
+	wekafiles/
+
+nothing added to commit but untracked files present
+error: src refspec master does not match any
+error: failed to push some refs to '/Users/josemiguelavendanoinfante/R/sites/javenda_site/.git'
+p
