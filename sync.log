@@ -10,3 +10,15 @@ hint: not have locally. This is usually caused by another repository pushing
 hint: to the same ref. You may want to first integrate the remote changes
 hint: (e.g., 'git pull ...') before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[main c118759] x_prueba
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+From https://github.com/javendaXgh/javenda_site
+ * branch            master     -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+To https://github.com/javendaXgh/javenda_site
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/javendaXgh/javenda_site'
+hint: Updates were rejected because a pushed branch tip is behind its remote
+hint: counterpart. Check out this branch and integrate the remote changes
+hint: (e.g. 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.

@@ -12,7 +12,7 @@ system('git config user.name "javendaXgh"')
 #system('git remote add p.jpeg https://github.com/javendaXgh/javenda_site')
 #system('git remote add .')
 system('git add /Users/josemiguelavendanoinfante/R/sites/javenda_site/data-raw/arc.Rda')
-system('git commit -am "x_prueba"')
+system('git commit -am "x1_prueba"')
 #system('git status')
 
 #system('git branch -a')
