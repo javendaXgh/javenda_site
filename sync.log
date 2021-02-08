@@ -1,0 +1,12 @@
+[main 9394c4a] x_prueba
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 data-raw/arc.Rda
+ delete mode 100644 i.jpeg
+To https://github.com/javendaXgh/javenda_site
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/javendaXgh/javenda_site'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
