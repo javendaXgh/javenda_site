@@ -271,6 +271,8 @@ plugins_js  = []
 [marketing]
   google_analytics = "G-TZ967Z11S8"
   google_tag_manager = ""
+  google_site_verification = ""
+
 
 ############################
 ## Content Management System
