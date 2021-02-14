@@ -1,4 +1,17 @@
 library(git2r)
+library(rmarkdown)
+library(shinydashboard)
+#library(shinyjs)
+library(plotly)
+library(highcharter)
+library(flexdashboard)
+library(emo)
+library(stringr)
+library(DT)
+library(dplyr)
+library(tidyverse)
+
+Sys.setenv(RSTUDIO_PANDOC="Applications/RStudio.app/Contents/MacOS/pandoc")
 setwd('/Users/josemiguelavendanoinfante/R/javenda_site')
 source('/Users/josemiguelavendanoinfante/R/shiny/app_covid_ven/actualizacion.R')
 
