@@ -14,7 +14,9 @@ library(tidyverse)
 Sys.setenv(RSTUDIO_PANDOC="Applications/RStudio.app/Contents/MacOS/pandoc")
 setwd('/Users/josemiguelavendanoinfante/R/javenda_site')
 source('/Users/josemiguelavendanoinfante/R/shiny/app_covid_ven/actualizacion.R')
-
+#file.copy('/Users/josemiguelavendanoinfante/R/shiny/app_covid_ven/covid_intento.html','/Users/josemiguelavendanoinfante/R/javenda_site/static/covid19venezuela.html', 
+#overwrite = TRUE)
+#0 */3 * * *  ######3hours cron setting
 #ESTE ES EL QUE FUNCION'O
 #https://popgen.nescent.org/CONTRIBUTING_WITH_GIT2R.html
 #https://docs.ropensci.org/git2r/index.html
