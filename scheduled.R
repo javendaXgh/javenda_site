@@ -10,8 +10,9 @@ library(stringr)
 library(DT)
 library(dplyr)
 library(tidyverse)
-
 Sys.setenv(RSTUDIO_PANDOC="/usr/lib/rstudio/bin/pandoc")
+#R -e "Sys.setenv(RSTUDIO_PANDOC='/usr/lib/rstudio/bin/pandoc'); rmarkdown::render('File.Rmd', output_file='output.html')"
+
 setwd('/home/jose/R/javenda_site')
 source('/home/jose/R/shiny/app_covid_ven/actualizacion.R')
 #file.copy('/Users/josemiguelavendanoinfante/R/shiny/app_covid_ven/covid_intento.html','/Users/josemiguelavendanoinfante/R/javenda_site/static/covid19venezuela.html', 
