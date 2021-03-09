@@ -21425,3 +21425,316 @@ $token
 
 attr(,"class")
 [1] "cred_token"
+[b00aa35] 2021-03-09: Commit covid 2021-03-09 08:00:04
+
+Attaching package: ‘shinydashboard’
+
+The following object is masked from ‘package:graphics’:
+
+    box
+
+Loading required package: ggplot2
+
+Attaching package: ‘plotly’
+
+The following object is masked from ‘package:ggplot2’:
+
+    last_plot
+
+The following object is masked from ‘package:git2r’:
+
+    config
+
+The following object is masked from ‘package:stats’:
+
+    filter
+
+The following object is masked from ‘package:graphics’:
+
+    layout
+
+Registered S3 method overwritten by 'quantmod':
+  method            from
+  as.zoo.data.frame zoo 
+
+Attaching package: ‘flexdashboard’
+
+The following objects are masked from ‘package:shinydashboard’:
+
+    renderValueBox, valueBox, valueBoxOutput
+
+
+Attaching package: ‘dplyr’
+
+The following object is masked from ‘package:git2r’:
+
+    pull
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+── Attaching packages ─────────────────────────────────────── tidyverse 1.3.0 ──
+✔ tibble  3.0.4     ✔ purrr   0.3.4
+✔ tidyr   1.1.2     ✔ forcats 0.5.0
+✔ readr   1.4.0     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter()   masks plotly::filter(), stats::filter()
+✖ purrr::is_empty() masks git2r::is_empty()
+✖ dplyr::lag()      masks stats::lag()
+✖ dplyr::pull()     masks git2r::pull()
+✖ purrr::when()     masks git2r::when()
+
+
+processing file: covid_intento.Rmd
+  |                                                                              |                                                                      |   0%  |                                                                              |..                                                                    |   3%
+  ordinary text without R code
+
+  |                                                                              |....                                                                  |   6%
+label: setup (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                              |......                                                                |   9%
+   inline R code fragments
+
+  |                                                                              |........                                                              |  11%
+label: unnamed-chunk-1
+  |                                                                              |..........                                                            |  14%
+  ordinary text without R code
+
+  |                                                                              |............                                                          |  17%
+label: unnamed-chunk-2
+  |                                                                              |..............                                                        |  20%
+  ordinary text without R code
+
+  |                                                                              |................                                                      |  23%
+label: unnamed-chunk-3
+  |                                                                              |..................                                                    |  26%
+  ordinary text without R code
+
+  |                                                                              |....................                                                  |  29%
+label: unnamed-chunk-4
+  |                                                                              |......................                                                |  31%
+  ordinary text without R code
+
+  |                                                                              |........................                                              |  34%
+label: unnamed-chunk-5
+No trace type specified:
+  Based on info supplied, a 'scatter' trace seems appropriate.
+  Read more about this trace type -> https://plotly.com/r/reference/#scatter
+  |                                                                              |..........................                                            |  37%
+  ordinary text without R code
+
+  |                                                                              |............................                                          |  40%
+label: unnamed-chunk-6
+No trace type specified:
+  Based on info supplied, a 'scatter' trace seems appropriate.
+  Read more about this trace type -> https://plotly.com/r/reference/#scatter
+A marker object has been specified, but markers is not in the mode
+Adding markers to the mode...
+  |                                                                              |..............................                                        |  43%
+  ordinary text without R code
+
+  |                                                                              |................................                                      |  46%
+label: unnamed-chunk-7
+  |                                                                              |..................................                                    |  49%
+  ordinary text without R code
+
+  |                                                                              |....................................                                  |  51%
+label: unnamed-chunk-8
+No trace type specified:
+  Based on info supplied, a 'scatter' trace seems appropriate.
+  Read more about this trace type -> https://plotly.com/r/reference/#scatter
+A marker object has been specified, but markers is not in the mode
+Adding markers to the mode...
+  |                                                                              |......................................                                |  54%
+  ordinary text without R code
+
+  |                                                                              |........................................                              |  57%
+label: unnamed-chunk-9
+  |                                                                              |..........................................                            |  60%
+  ordinary text without R code
+
+  |                                                                              |............................................                          |  63%
+label: unnamed-chunk-10
+No trace type specified:
+  Based on info supplied, a 'scatter' trace seems appropriate.
+  Read more about this trace type -> https://plotly.com/r/reference/#scatter
+A marker object has been specified, but markers is not in the mode
+Adding markers to the mode...
+  |                                                                              |..............................................                        |  66%
+  ordinary text without R code
+
+  |                                                                              |................................................                      |  69%
+label: unnamed-chunk-11
+  |                                                                              |..................................................                    |  71%
+  ordinary text without R code
+
+  |                                                                              |....................................................                  |  74%
+label: unnamed-chunk-12
+  |                                                                              |......................................................                |  77%
+  ordinary text without R code
+
+  |                                                                              |........................................................              |  80%
+label: unnamed-chunk-13
+  |                                                                              |..........................................................            |  83%
+  ordinary text without R code
+
+  |                                                                              |............................................................          |  86%
+label: unnamed-chunk-14
+  |                                                                              |..............................................................        |  89%
+  ordinary text without R code
+
+  |                                                                              |................................................................      |  91%
+label: unnamed-chunk-15
+  |                                                                              |..................................................................    |  94%
+  ordinary text without R code
+
+  |                                                                              |....................................................................  |  97%
+label: unnamed-chunk-16
+  |                                                                              |......................................................................| 100%
+  ordinary text without R code
+
+
+output file: covid_intento.knit.md
+
+/usr/bin/pandoc +RTS -K512m -RTS covid_intento.utf8.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash --output covid_intento.html --lua-filter /home/jose/R/x86_64-pc-linux-gnu-library/4.0/rmarkdown/rmarkdown/lua/pagebreak.lua --lua-filter /home/jose/R/x86_64-pc-linux-gnu-library/4.0/rmarkdown/rmarkdown/lua/latex-div.lua --email-obfuscation none --self-contained --standalone --section-divs --template /home/jose/R/x86_64-pc-linux-gnu-library/4.0/flexdashboard/rmarkdown/templates/flex_dashboard/resources/default.html --include-in-header /tmp/Rtmp15AAAK/rmarkdown-str43929a36a8da.html --variable 'theme:cosmo' --include-in-header /tmp/Rtmp15AAAK/rmarkdown-str439296b664624.html --mathjax --variable 'mathjax-url:https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' --include-in-header /tmp/Rtmp15AAAK/file43929519c28html --highlight-style pygments --include-in-header /home/jose/R/shiny/app_covid_ven/GA_script.html --include-before-body /tmp/Rtmp15AAAK/file439297d957ece.html --include-after-body /tmp/Rtmp15AAAK/file43929759ceefe.html --css css/prueba.css 
+[WARNING] This document format requires a nonempty <title> element.
+  Please specify either 'title' or 'pagetitle' in the metadata,
+  e.g. by using --metadata pagetitle="..." on the command line.
+  Falling back to 'covid_intento.utf8'
+
+Output created: covid_intento.html
+
+
+processing file: covid_intento.Rmd
+  |                                                                              |                                                                      |   0%  |                                                                              |..                                                                    |   3%
+  ordinary text without R code
+
+  |                                                                              |....                                                                  |   6%
+label: setup (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                              |......                                                                |   9%
+   inline R code fragments
+
+  |                                                                              |........                                                              |  11%
+label: unnamed-chunk-1
+  |                                                                              |..........                                                            |  14%
+  ordinary text without R code
+
+  |                                                                              |............                                                          |  17%
+label: unnamed-chunk-2
+  |                                                                              |..............                                                        |  20%
+  ordinary text without R code
+
+  |                                                                              |................                                                      |  23%
+label: unnamed-chunk-3
+  |                                                                              |..................                                                    |  26%
+  ordinary text without R code
+
+  |                                                                              |....................                                                  |  29%
+label: unnamed-chunk-4
+  |                                                                              |......................                                                |  31%
+  ordinary text without R code
+
+  |                                                                              |........................                                              |  34%
+label: unnamed-chunk-5
+No trace type specified:
+  Based on info supplied, a 'scatter' trace seems appropriate.
+  Read more about this trace type -> https://plotly.com/r/reference/#scatter
+  |                                                                              |..........................                                            |  37%
+  ordinary text without R code
+
+  |                                                                              |............................                                          |  40%
+label: unnamed-chunk-6
+No trace type specified:
+  Based on info supplied, a 'scatter' trace seems appropriate.
+  Read more about this trace type -> https://plotly.com/r/reference/#scatter
+A marker object has been specified, but markers is not in the mode
+Adding markers to the mode...
+  |                                                                              |..............................                                        |  43%
+  ordinary text without R code
+
+  |                                                                              |................................                                      |  46%
+label: unnamed-chunk-7
+  |                                                                              |..................................                                    |  49%
+  ordinary text without R code
+
+  |                                                                              |....................................                                  |  51%
+label: unnamed-chunk-8
+No trace type specified:
+  Based on info supplied, a 'scatter' trace seems appropriate.
+  Read more about this trace type -> https://plotly.com/r/reference/#scatter
+A marker object has been specified, but markers is not in the mode
+Adding markers to the mode...
+  |                                                                              |......................................                                |  54%
+  ordinary text without R code
+
+  |                                                                              |........................................                              |  57%
+label: unnamed-chunk-9
+  |                                                                              |..........................................                            |  60%
+  ordinary text without R code
+
+  |                                                                              |............................................                          |  63%
+label: unnamed-chunk-10
+No trace type specified:
+  Based on info supplied, a 'scatter' trace seems appropriate.
+  Read more about this trace type -> https://plotly.com/r/reference/#scatter
+A marker object has been specified, but markers is not in the mode
+Adding markers to the mode...
+  |                                                                              |..............................................                        |  66%
+  ordinary text without R code
+
+  |                                                                              |................................................                      |  69%
+label: unnamed-chunk-11
+  |                                                                              |..................................................                    |  71%
+  ordinary text without R code
+
+  |                                                                              |....................................................                  |  74%
+label: unnamed-chunk-12
+  |                                                                              |......................................................                |  77%
+  ordinary text without R code
+
+  |                                                                              |........................................................              |  80%
+label: unnamed-chunk-13
+  |                                                                              |..........................................................            |  83%
+  ordinary text without R code
+
+  |                                                                              |............................................................          |  86%
+label: unnamed-chunk-14
+  |                                                                              |..............................................................        |  89%
+  ordinary text without R code
+
+  |                                                                              |................................................................      |  91%
+label: unnamed-chunk-15
+  |                                                                              |..................................................................    |  94%
+  ordinary text without R code
+
+  |                                                                              |....................................................................  |  97%
+label: unnamed-chunk-16
+  |                                                                              |......................................................................| 100%
+  ordinary text without R code
+
+
+output file: covid_intento.knit.md
+
+/usr/bin/pandoc +RTS -K512m -RTS covid_intento.utf8.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash --output covid_intento.html --lua-filter /home/jose/R/x86_64-pc-linux-gnu-library/4.0/rmarkdown/rmarkdown/lua/pagebreak.lua --lua-filter /home/jose/R/x86_64-pc-linux-gnu-library/4.0/rmarkdown/rmarkdown/lua/latex-div.lua --email-obfuscation none --self-contained --standalone --section-divs --template /home/jose/R/x86_64-pc-linux-gnu-library/4.0/flexdashboard/rmarkdown/templates/flex_dashboard/resources/default.html --include-in-header /tmp/Rtmp15AAAK/rmarkdown-str439294ca23976.html --variable 'theme:cosmo' --include-in-header /tmp/Rtmp15AAAK/rmarkdown-str4392952bf6150.html --mathjax --variable 'mathjax-url:https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' --include-in-header /tmp/Rtmp15AAAK/file4392925623d0bhtml --highlight-style pygments --include-in-header /home/jose/R/shiny/app_covid_ven/GA_script.html --include-before-body /tmp/Rtmp15AAAK/file43929cfa6a25.html --include-after-body /tmp/Rtmp15AAAK/file439291f619ac6.html --css css/prueba.css 
+[WARNING] This document format requires a nonempty <title> element.
+  Please specify either 'title' or 'pagetitle' in the metadata,
+  e.g. by using --metadata pagetitle="..." on the command line.
+  Falling back to 'covid_intento.utf8'
+
+Output created: covid_intento.html
+There were 22 warnings (use warnings() to see them)
+$token
+[1] "GITHUB_PAT"
+
+attr(,"class")
+[1] "cred_token"
