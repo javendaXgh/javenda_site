@@ -159,7 +159,7 @@ leaflet(simplified) %>%
                     clusterOptions = markerClusterOptions(),
                     group = 'Privadas (verdes)')%>%
   addAwesomeMarkers(df_4$lon, df_4$lat,
-                    icon=icons3,label = as.character(df_3$tipo),
+                    icon=icons4,label = as.character(df_3$tipo),
                     popup = as.character(df_4$direccion_completa),
                     clusterOptions = markerClusterOptions(),
                     group = 'Resto')%>%
