@@ -9,7 +9,6 @@ config
 config.toml
 config.yaml
 content/
-data/
 data-raw/
 laoyuts/
 netlify.toml
