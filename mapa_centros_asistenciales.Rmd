@@ -219,7 +219,6 @@ Si desea descargar los datos con los cuales se generaron estos gráficos usar lo
 https://javenda.me/data/centros_medicos.xls
 
 
-[acceso](https://rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf) 
 
   
   
