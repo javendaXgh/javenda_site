@@ -23,7 +23,7 @@ view: 12
 
 
 
-#### Acceso a mapa interactivo de Centros de Atención Médica Venezuela y listado: [vinculo](https://www.javenda.me/mapas_centros_asistenciales.html/)
+#### Acceso a mapa interactivo de Centros de Atención Médica Venezuela y listado: [vinculo](/mapas_centros_asistenciales.html/)
 
 
 ---

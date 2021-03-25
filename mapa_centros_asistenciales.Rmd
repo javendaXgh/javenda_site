@@ -1,0 +1,226 @@
+---
+title:
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: rows
+    vertical_layout: scroll
+    css: css/prueba.css
+    social: [ "twitter",  "menu" ]
+    navbar:
+      - { title: "home", icon: "fa-home", href: "https://javenda.me/", align: left }
+    includes:
+       in_header: GA_script.html
+
+---
+
+
+
+
+```{r setup, include=FALSE}
+#title: "Datos COVID 19 Venezuela"
+library(shinydashboard)
+library(leaflet)
+#library(shinyjs)
+#library(plotly)
+#library(highcharter)
+library(flexdashboard)
+library(reactable)
+library(reactablefmtr)
+#library(emo)
+#library(stringr)
+#library(DT)
+#library(ggplot2)
+#htmltools::tagList(rmarkdown::html_dependency_font_awesome())
+#source('/Users/josemiguelavendanoinfante/R/shiny/app_covid_ven/high_charter_options.R')
+#source('/Users/josemiguelavendanoinfante/R/shiny/app_covid_ven/0_carga_datos.R')
+#source('/Users/josemiguelavendanoinfante/R/shiny/app_covid_ven/1_generacion_graficosR.R')
+my_title <- paste0('  Centros de Atención Médica ',emo::ji("venezuela"),'               ')
+
+```
+---
+title: '`r my_title`'
+
+---
+<!--html_preserve-->
+
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TZ967Z11S8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-TZ967Z11S8');
+  </script>
+
+
+</head> 
+<!--/html_preserve-->
+
+
+```{r lectura  }
+simplified <- readRDS(paste0(getwd(),'/ven_simplified.rds'))
+
+icons1 <- readRDS(paste0(getwd(),'/bdmap/icons1.rds'))
+icons2 <- readRDS(paste0(getwd(),'/bdmap/icons2.rds'))
+icons3 <- readRDS(paste0(getwd(),'/bdmap/icons3.rds'))
+icons4 <- readRDS(paste0(getwd(),'/bdmap/icons4.rds'))
+df_1 <- readRDS(paste0(getwd(),'/bdmap/df_1.rds'))
+df_2 <- readRDS(paste0(getwd(),'/bdmap/df_2.rds'))
+df_3 <- readRDS(paste0(getwd(),'/bdmap/df_3.rds'))
+df_4 <- readRDS(paste0(getwd(),'/bdmap/df_4.rds'))
+df_tabla <- readRDS(paste0(getwd(),'/bdmap/df_hospitales_seleccion_mapa.rds'))
+rownames(df_tabla) <- NULL
+
+options(reactable.theme = reactableTheme(
+  color = "hsl(233, 9%, 87%)",
+  backgroundColor = "hsl(233, 9%, 19%)",
+  borderColor = "hsl(233, 9%, 22%)",
+  stripedColor = "hsl(233, 12%, 22%)",
+  highlightColor = "hsl(233, 12%, 24%)",
+  inputStyle = list(backgroundColor = "hsl(233, 9%, 25%)"),
+  selectStyle = list(backgroundColor = "hsl(233, 9%, 25%)"),
+  pageButtonHoverStyle = list(backgroundColor = "hsl(233, 9%, 25%)"),
+  pageButtonActiveStyle = list(backgroundColor = "hsl(233, 9%, 28%)")
+))
+```                
+
+              
+<script>
+document.querySelector(".navbar-header > span.navbar-brand").innerHTML = "`r my_title`";
+</script> 
+
+<br>
+
+
+
+
+
+Row
+-----------------------------------------------------------------------
+### Hospitales
+```{r}
+valor1 <- dim(df_1)[1]
+valueBox(valor1, icon = 'fa-hospital', color= '#d62828')
+
+```
+
+### C.D.I.
+```{r}
+valor2 <- dim(df_2)[1]
+valueBox(valor2,  icon= 'fa-hospital', color= '#0077b6')#"f"fa-thumbs-down
+```
+
+### Privadas
+```{r}
+valor3 <- dim(df_3)[1]
+valueBox(valor3,  icon = 'fa-hospital', color='green') #icon("", lib = "glyphicon"))#icon = "fa-download")
+```
+
+### Otras
+
+```{r}
+#color = "yellow")
+valor4 <- dim(df_4)[1]
+valueBox(valor4,  icon = 'fa-hospital', color= 'gray') #icon("ok", lib = "glyphicon"))#"fa-download")
+
+
+```
+
+
+
+Row {data-height=650}
+-------------------------------------
+
+### **Mapa Venezuela** {data-padding=50}
+
+```{r}
+leaflet(simplified) %>%
+  addPolygons(color = "#e9c46a", weight = 1, smoothFactor = 1,
+              opacity = 1.0, fillOpacity = 0.1,
+              highlightOptions = highlightOptions(color = "white", weight = 2,
+                                                  bringToFront = TRUE))%>%
+  addProviderTiles(providers$CartoDB.Positron,options = providerTileOptions(opacity = 1))%>% #esta es la que se usara
+  addAwesomeMarkers(df_1$lon, df_1$lat,
+                    icon=icons1,label = as.character(df_1$tipo),
+                    popup = as.character(df_1$direccion_completa),
+                    clusterOptions = markerClusterOptions(),
+                    group = "Hospitales (rojo)")%>%
+  addAwesomeMarkers(df_2$lon, df_2$lat,
+                    icon=icons2,label = as.character(df_2$tipo),
+                    popup = as.character(df_2$direccion_completa),
+                    clusterOptions = markerClusterOptions(),
+                    group = 'Centros de Diagnóstico Integral (azul)')%>%
+  addAwesomeMarkers(df_3$lon, df_3$lat,
+                    icon=icons3,label = as.character(df_3$tipo),
+                    popup = as.character(df_3$direccion_completa),
+                    clusterOptions = markerClusterOptions(),
+                    group = 'Privadas (verdes)')%>%
+  addAwesomeMarkers(df_4$lon, df_4$lat,
+                    icon=icons3,label = as.character(df_3$tipo),
+                    popup = as.character(df_4$direccion_completa),
+                    clusterOptions = markerClusterOptions(),
+                    group = 'Resto')%>%
+  addLayersControl(
+    overlayGroups = c("Hospitales (rojo)",'Centros de Diagnóstico Integral (azul)','Privadas (verdes)','Resto'),
+    options = layersControlOptions(collapsed = FALSE)
+  )
+
+
+
+
+```
+
+Row
+-------------------------------------
+    
+### **Listado Centros Médicos:**{data-padding=40}
+
+```{r}
+
+reactable(df_tabla,
+    filterable = TRUE,
+  showPageSizeOptions = TRUE,
+  striped = TRUE,
+  highlight = TRUE,
+  showSortable = TRUE,
+  columns = list(
+    estado = colDef(minWidth = 24) ,
+    municipio = colDef(minWidth = 24) ,
+    direccion_completa = colDef(minWidth = 130),   
+    tipo = colDef(minWidth = 30),  
+    lon = colDef(minWidth = 24) ,
+    lat = colDef(minWidth = 24)# 25% width, 100px minimum
+    #fecha = colDef(minWidth = 25, align = 'right'),   
+  ),
+  bordered = TRUE)
+
+```
+
+    
+
+Row
+-------------------------------------
+
+### Sobre las direcciones:
+
+Las coordenadas de los centros de atención médica fueron obtenidas mediante el uso de la API de Google apartir de un conjunto de datos de direcciones de más de 5300 centros de atención médica que tiene a disposició el Ministerio del Poder Popular para la Salud en formato PDF. Se descartó colocar en esta visualización los "ambulatorios" y los "consultorio médico popular" para facilitar el primer acceso a este lote de información.
+
+Como no se disponían de los datos de geolocalización (coordenadas en el mapa) la información acá representada puede estar sujeta a errores los cuales se pueden reportar al correo electrónico javenda.centrosmedicos@gmail.com junto con las coordenadas o dirección correcta para proceder a actualizar los datos y la visualización del mapa.
+
+Observación: no se garantiza que los datos contenidos sea fidedignos. Este es uexclusivamente un mapa de ayuda para que sea corroborado por el interesado la veracidad de las ubicaciones mostradas.
+
+Este proyecto se realiza dentro de las iniciativas para impulsar el uso de los datos abiertos en Venezuela. En el procesamiento de los datos y en la visualización participan el "Grupo de Usuarios de R-Venezuela" y "Hack Hackers Caracas" promoviendo un uso responsable de los datos. Igualmente todos los datos y visualizaciones fueron realizadas en el lenguaje "open source" R.
+
+Si desea descargar los datos con los cuales se generaron estos gráficos usar los enlaces:
+
+https://javenda.me/data/centros_medicos.xls
+
+
+[acceso](https://rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf) 
+
+  
+  
+  
