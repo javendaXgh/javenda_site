@@ -16,11 +16,14 @@ view: 12
 ---
 ---
 
-#### Acceso a gráficos interactivos y datos históricos del COVID19 en Venezuela según cifras oficiales:
-https://www.javenda.me/covid19venezuela.html/
-(tiempo de carga cercano a 30 segundos)
+#### Acceso a gráficos interactivos y datos históricos del COVID19 en Venezuela según cifras oficiales: [vinculo](https://www.javenda.me/covid19venezuela.html/) 
 
-#### Accesso a visualización de gráfico interactivo con los cambios de movilidad en Sur América motivados en la aparición del COVID 19 según datos del Google Mobility Report.
-https://javenda.shinyapps.io/movilsur/
+
+#### Accesso a visualización de gráfico interactivo con los cambios de movilidad en Sur América motivados en la aparición del COVID: 19 según datos del Google Mobility Report. [vinculo](https://javenda.shinyapps.io/movilsur/)
+
+
+
+#### Acceso a mapa interactivo de Centros de Atención Médica Venezuela y listado: [vinculo](https://www.javenda.me/mapas_centros_asistenciales.html) 
+
 
 ---
