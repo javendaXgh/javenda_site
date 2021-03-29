@@ -19,10 +19,13 @@ output:
 ```{r setup, include=FALSE}
 #title: "Datos COVID 19 Venezuela"
 library(shinydashboard)
+library(leaflet.extras)
+
 library(leaflet)
-#library(shinyjs)
-#library(plotly)
-#library(highcharter)
+library(leafem)
+#library(leaflet.multiopacity)
+library(leafpop)
+library(dplyr)
 library(flexdashboard)
 library(reactable)
 library(reactablefmtr)
@@ -61,7 +64,7 @@ title: '`r my_title`'
 
 
 ```{r lectura  }
-simplified <- readRDS(paste0(getwd(),'/ven_simplified.rds'))
+simplified <- readRDS('/home/jose/R/javenda_site/ven_simplified.rds')
 
 icons1 <- readRDS(paste0(getwd(),'/bdmap/icons1.rds'))
 icons2 <- readRDS(paste0(getwd(),'/bdmap/icons2.rds'))
@@ -71,8 +74,7 @@ df_1 <- readRDS(paste0(getwd(),'/bdmap/df_1.rds'))
 df_2 <- readRDS(paste0(getwd(),'/bdmap/df_2.rds'))
 df_3 <- readRDS(paste0(getwd(),'/bdmap/df_3.rds'))
 df_4 <- readRDS(paste0(getwd(),'/bdmap/df_4.rds'))
-df_tabla <- readRDS(paste0(getwd(),'/bdmap/df_hospitales_seleccion_mapa.rds'))
-rownames(df_tabla) <- NULL
+
 
 options(reactable.theme = reactableTheme(
   color = "hsl(233, 9%, 87%)",
@@ -142,31 +144,46 @@ leaflet(simplified) %>%
               opacity = 1.0, fillOpacity = 0.1,
               highlightOptions = highlightOptions(color = "white", weight = 2,
                                                   bringToFront = TRUE))%>%
-  addProviderTiles(providers$CartoDB.Positron,options = providerTileOptions(opacity = 1))%>% #esta es la que se usara
+  addProviderTiles(providers$CartoDB.Positron,options = providerTileOptions(opacity = 1))%>%
+  #addProviderTiles("CartoDB.DarkMatter", group = "dark") %>%
+  addMouseCoordinates()%>%
   addAwesomeMarkers(df_1$lon, df_1$lat,
                     icon=icons1,label = as.character(df_1$tipo),
-                    popup = as.character(df_1$direccion_completa),
+                    #popup = as.character(df_1$direccion_completa),
                     clusterOptions = markerClusterOptions(),
-                    group = "Hospitales (rojo)")%>%
+                    group = "Hospitales (rojo)", 
+                    popup = popupTable(df_1[,c(1:3,6,7,8,9)],feature.id = FALSE,row.numbers =FALSE) 
+                    )%>%#,label='hospitales'
   addAwesomeMarkers(df_2$lon, df_2$lat,
                     icon=icons2,label = as.character(df_2$tipo),
-                    popup = as.character(df_2$direccion_completa),
+                    #popup = as.character(df_2$direccion_completa),
                     clusterOptions = markerClusterOptions(),
-                    group = 'Centros de Diagnóstico Integral (azul)')%>%
+                    group = 'Centros de Diagnóstico Integral (azul)',
+                    popup = popupTable(df_2[,c(1:3,6,7,8,9)],feature.id = FALSE,row.numbers =FALSE) 
+                    )%>%#,label='CDI'
   addAwesomeMarkers(df_3$lon, df_3$lat,
                     icon=icons3,label = as.character(df_3$tipo),
-                    popup = as.character(df_3$direccion_completa),
+                    #popup = as.character(df_3$direccion_completa),
                     clusterOptions = markerClusterOptions(),
-                    group = 'Privadas (verdes)')%>%
+                    group = 'Privadas (verdes)',
+                    popup = popupTable(df_3[,c(1:3,6,7,8,9)],feature.id = FALSE,row.numbers =FALSE) 
+                    )%>%
   addAwesomeMarkers(df_4$lon, df_4$lat,
-                    icon=icons4,label = as.character(df_3$tipo),
-                    popup = as.character(df_4$direccion_completa),
+                    icon=icons3,label = as.character(df_4$tipo),
+                    #popup = as.character(df_4$direccion_completa),
                     clusterOptions = markerClusterOptions(),
+                    popup = popupTable(df_4[,c(1:3,6,7,8,9)],feature.id = FALSE,row.numbers =FALSE),
                     group = 'Resto')%>%
   addLayersControl(
-    overlayGroups = c("Hospitales (rojo)",'Centros de Diagnóstico Integral (azul)','Privadas (verdes)','Resto'),
-    options = layersControlOptions(collapsed = FALSE)
-  )
+  overlayGroups = c("Hospitales (rojo)",'Centros de Diagnóstico Integral (azul)','Privadas #(verdes)','Resto'),
+  options = layersControlOptions(collapsed = FALSE))%>%
+  addControlGPS(options = gpsOptions(position = "topleft", activate = TRUE, 
+                                               autoCenter = TRUE, maxZoom = 10, 
+                                               setView = TRUE))
+  # )%>%
+  # addProviderTiles("OpenStreetMap") %>%
+  # addMouseCoordinates()
+  # 
 
 
 
@@ -179,6 +196,14 @@ Row
 ### **Listado Centros Médicos:**{data-padding=40}
 
 ```{r}
+library(dplyr)
+library(reactable)
+library(reactablefmtr)
+
+df_tabla <- readRDS(paste0(getwd(),'/bdmap/df_mapa.rds'))%>%
+            select(2:5)
+
+rownames(df_tabla) <- NULL
 
 reactable(df_tabla,
     filterable = TRUE,
@@ -190,10 +215,9 @@ reactable(df_tabla,
     estado = colDef(minWidth = 24) ,
     municipio = colDef(minWidth = 24) ,
     direccion_completa = colDef(minWidth = 130),   
-    tipo = colDef(minWidth = 30),  
-    lon = colDef(minWidth = 24) ,
-    lat = colDef(minWidth = 24)# 25% width, 100px minimum
-    #fecha = colDef(minWidth = 25, align = 'right'),   
+    tipo = colDef(minWidth = 30)#,  
+    #lon = colDef(minWidth = 24) ,
+    #lat = colDef(minWidth = 24)# 25% width, 100px minimum
   ),
   bordered = TRUE)
 
@@ -214,12 +238,28 @@ Observación: no se garantiza que los datos contenidos sea fidedignos. Este es u
 
 Este proyecto se realiza dentro de las iniciativas para impulsar el uso de los datos abiertos en Venezuela. En el procesamiento de los datos y en la visualización participan el "Grupo de Usuarios de R-Venezuela" y "Hack Hackers Caracas" promoviendo un uso responsable de los datos. Igualmente todos los datos y visualizaciones fueron realizadas en el lenguaje "open source" R.
 
+Sitios remoto no se muestra preciso, por ejemplo en el estado Delta Amacuro
+
 Si desea descargar los datos con los cuales se generaron estos gráficos usar los enlaces:
 
+**formato excel**
 https://javenda.me/data/centros_medicos.xls
 
+**formato csv**
+https://javenda.me/data/centros_medicos.csv
 
 
-  
-  
+Enlaces listados y descarga de toda la app
+
+**listado hospitales en tabla html**
+https://github.com/javendaXgh/datos_centos_medicos/raw/master/procesados/listado.html.zip
+
+**mapa con listado de hospitales en html**
+https://github.com/javendaXgh/datos_centos_medicos/raw/master/procesados/mapa_centros_asistenciales.html.zip
+
+**repositorio con listados ministerio del pp para la Salud y demás datos recopilados:**
+https://github.com/javendaXgh/datos_centos_medicos
+
+
+
   
