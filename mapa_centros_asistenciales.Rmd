@@ -201,7 +201,7 @@ library(reactable)
 library(reactablefmtr)
 
 df_tabla <- readRDS(paste0(getwd(),'/bdmap/df_mapa.rds'))%>%
-            select(2:5)
+            select(2:4)
 
 rownames(df_tabla) <- NULL
 
@@ -213,7 +213,7 @@ reactable(df_tabla,
   showSortable = TRUE,
   columns = list(
     estado = colDef(minWidth = 24) ,
-    municipio = colDef(minWidth = 24) ,
+    #municipio = colDef(minWidth = 24) ,
     direccion_completa = colDef(minWidth = 130),   
     tipo = colDef(minWidth = 30)#,  
     #lon = colDef(minWidth = 24) ,
@@ -252,7 +252,7 @@ https://javenda.me/data/centros_medicos.csv
 Enlaces listados y descarga de toda la app
 
 **listado hospitales en tabla html**
-https://github.com/javendaXgh/datos_centos_medicos/raw/master/procesados/listado.html.zip
+https://github.com/javendaXgh/datos_centos_medicos/raw/master/listado.html.zip
 
 **mapa con listado de hospitales en html**
 https://github.com/javendaXgh/datos_centos_medicos/raw/master/procesados/mapa_centros_asistenciales.html.zip
