@@ -1,0 +1,8 @@
+TWITTER_PAT=/home/jose/.rtweet_token7.rds
+R_TELEGRAM_BOT_javenda_bot = '1328418034:AAEtiA6EoCOhSygwWKh6ggavum-SYKZvEps'
+R_TELEGRAM_BOT_ prefix_javenda_bot = '1328418034:AAEtiA6EoCOhSygwWKh6ggavum-SYKZvEps'
+R_TELEGRAM_USER_me=570811402
+GITHUB_PAT= "55a8cf1662ebedec65a1a8f11e30ff189eb0fc4f"
+GGMAP_GOOGLE_API_KEY= "AIzaSyD-xv1oy8pmAupe8Z7RWzmEGOrcBSm_HXg"
+MAPBOX_PUBLIC_TOKEN='pk.eyJ1IjoiamF2ZW5kYSIsImEiOiJjazNrbzI4dTkwMHNoM2hsOXpscHFmdTN6In0.46MMLCd11bwHEyWB3uXm1w'
+RSTUDIO_PANDOC=/usr/lib/rstudio/bin/pandoc
