@@ -1,0 +1,10 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+javenda_site.Rproj
+.gitignore
+assets/
+  config
+config.toml
+config.yaml
