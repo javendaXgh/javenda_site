@@ -97772,3 +97772,12 @@ output file: covid_intento.knit.md
   Please specify either 'title' or 'pagetitle' in the metadata,
   e.g. by using --metadata pagetitle="..." on the command line.
   Falling back to 'covid_intento.utf8'
+
+Output created: covid_intento.html
+There were 22 warnings (use warnings() to see them)
+$token
+[1] "GITHUB_PAT"
+
+attr(,"class")
+[1] "cred_token"
+[fa6e018] 2021-04-15: Commit covid 2021-04-15 19:00:25
