@@ -99055,3 +99055,62 @@ output file: covid_intento.knit.md
   Falling back to 'covid_intento.utf8'
 
 Output created: covid_intento.html
+There were 22 warnings (use warnings() to see them)
+$token
+[1] "GITHUB_PAT"
+
+attr(,"class")
+[1] "cred_token"
+[4b6e73a] 2021-04-16: Commit covid 2021-04-16 08:00:21
+
+Attaching package: ‘shinydashboard’
+
+The following object is masked from ‘package:graphics’:
+
+    box
+
+Loading required package: ggplot2
+
+Attaching package: ‘plotly’
+
+The following object is masked from ‘package:ggplot2’:
+
+    last_plot
+
+The following object is masked from ‘package:git2r’:
+
+    config
+
+The following object is masked from ‘package:stats’:
+
+    filter
+
+The following object is masked from ‘package:graphics’:
+
+    layout
+
+Registered S3 method overwritten by 'quantmod':
+  method            from
+  as.zoo.data.frame zoo 
+
+Attaching package: ‘flexdashboard’
+
+The following objects are masked from ‘package:shinydashboard’:
+
+    renderValueBox, valueBox, valueBoxOutput
+
+
+Attaching package: ‘dplyr’
+
+The following object is masked from ‘package:git2r’:
+
+    pull
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
