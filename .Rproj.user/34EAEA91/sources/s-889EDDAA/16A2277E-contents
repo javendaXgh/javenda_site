@@ -103388,3 +103388,61 @@ The following objects are masked from ‘package:base’:
 ✖ dplyr::lag()      masks stats::lag()
 ✖ dplyr::pull()     masks git2r::pull()
 ✖ purrr::when()     masks git2r::when()
+$token
+[1] "GITHUB_PAT"
+
+attr(,"class")
+[1] "cred_token"
+[7cddbbb] 2021-04-19: Commit covid 2021-04-18 23:00:04
+
+Attaching package: ‘shinydashboard’
+
+The following object is masked from ‘package:graphics’:
+
+    box
+
+Loading required package: ggplot2
+
+Attaching package: ‘plotly’
+
+The following object is masked from ‘package:ggplot2’:
+
+    last_plot
+
+The following object is masked from ‘package:git2r’:
+
+    config
+
+The following object is masked from ‘package:stats’:
+
+    filter
+
+The following object is masked from ‘package:graphics’:
+
+    layout
+
+Registered S3 method overwritten by 'quantmod':
+  method            from
+  as.zoo.data.frame zoo 
+
+Attaching package: ‘flexdashboard’
+
+The following objects are masked from ‘package:shinydashboard’:
+
+    renderValueBox, valueBox, valueBoxOutput
+
+
+Attaching package: ‘dplyr’
+
+The following object is masked from ‘package:git2r’:
+
+    pull
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
