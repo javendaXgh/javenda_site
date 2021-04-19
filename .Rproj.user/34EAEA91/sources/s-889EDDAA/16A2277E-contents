@@ -104812,3 +104812,17 @@ The following objects are masked from ‘package:base’:
 ✖ dplyr::lag()      masks stats::lag()
 ✖ dplyr::pull()     masks git2r::pull()
 ✖ purrr::when()     masks git2r::when()
+$token
+[1] "GITHUB_PAT"
+
+attr(,"class")
+[1] "cred_token"
+[82f3846] 2021-04-19: Commit covid 2021-04-19 14:00:03
+
+Attaching package: ‘shinydashboard’
+
+The following object is masked from ‘package:graphics’:
+
+    box
+
+Loading required package: ggplot2
