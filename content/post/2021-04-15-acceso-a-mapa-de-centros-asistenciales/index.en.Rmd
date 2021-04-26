@@ -18,7 +18,7 @@ image:
 projects: []
 ---
 
-Para ser dirigido a la aplicación web con el mapas interactivo de los centros asistenciales médicos hacer click debajo de la imagen o en el enlace [vinculo](/mapa_centros_asistenciales.html/)  
+Para ser dirigido a la aplicación web con el mapas interactivo de los centros médicos asistenciales hacer click debajo de la imagen o en el enlace [vinculo](/mapa_centros_asistenciales.html/)  
 
 
 

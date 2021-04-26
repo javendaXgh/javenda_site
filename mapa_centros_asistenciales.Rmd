@@ -230,15 +230,15 @@ Row
 
 ### Sobre las direcciones:
 
-Las coordenadas de los centros de atención médica fueron obtenidas mediante el uso de la API de Google apartir de un conjunto de datos de direcciones de más de 5300 centros de atención médica que tiene a disposició el Ministerio del Poder Popular para la Salud en formato PDF. Se descartó colocar en esta visualización los "ambulatorios" y los "consultorio médico popular" para facilitar el primer acceso a este lote de información.
+Las coordenadas de los centros de atención médica fueron obtenidas mediante el uso de la API de Google a partir de un conjunto de datos de direcciones de más de 5300 centros de atención médica que tiene a disposición el Ministerio del Poder Popular para la Salud en formato PDF. Se descartó colocar en esta visualización los "ambulatorios" y los "consultorios médicos populares" para facilitar el primer acceso a este lote de información.
 
-Como no se disponían de los datos de geolocalización (coordenadas en el mapa) la información acá representada puede estar sujeta a errores los cuales se pueden reportar al correo electrónico javenda.centrosmedicos@gmail.com junto con las coordenadas o dirección correcta para proceder a actualizar los datos y la visualización del mapa.
+Como no se disponían de los datos de geolocalización (coordenadas en el mapa) la información acá representada puede estar sujeta a errores los cuales se pueden reportar al correo electrónico javenda.centrosmedicos@gmail.com junto con las coordenadas y/o la dirección correcta para proceder a actualizar los datos y la visualización del mapa.
 
-Observación: no se garantiza que los datos contenidos sea fidedignos. Este es uexclusivamente un mapa de ayuda para que sea corroborado por el interesado la veracidad de las ubicaciones mostradas.
+Observación: no se garantiza que los datos contenidos sean fidedignos. Este producto es exclusivamente un mapa de ayuda para que sea corroborado por el interesado.
 
 Este proyecto se realiza dentro de las iniciativas para impulsar el uso de los datos abiertos en Venezuela. En el procesamiento de los datos y en la visualización participan el "Grupo de Usuarios de R-Venezuela" y "Hack Hackers Caracas" promoviendo un uso responsable de los datos. Igualmente todos los datos y visualizaciones fueron realizadas en el lenguaje "open source" R.
 
-Sitios remoto no se muestra preciso, por ejemplo en el estado Delta Amacuro
+Sitios remotos no se muestran con precisión, por ejemplo los centros en el estado Delta Amacuro
 
 Si desea descargar los datos con los cuales se generaron estos gráficos usar los enlaces:
 
