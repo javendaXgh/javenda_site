@@ -10,4 +10,5 @@ config.toml
 config.yaml
 scheduled.log
 mapa_centros_asistenciales.Rmd
+varios
 
